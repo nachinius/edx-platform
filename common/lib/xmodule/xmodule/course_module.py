@@ -796,7 +796,7 @@ class CourseFields(object):
             "Enter true or false. If this value is true, you can hide a "
             "subsection until learners earn a minimum score in another, "
             "prerequisite subsection."
-        ),
+            ),
         default=False,
         scope=Scope.settings
     )

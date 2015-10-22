@@ -134,6 +134,7 @@ class InheritingFieldDataTest(unittest.TestCase):
 
 
 class EditableMetadataFieldsTest(unittest.TestCase):
+
     def test_display_name_field(self):
         editable_fields = self.get_xml_editable_fields(DictFieldData({}))
         # Tests that the xblock fields (currently tags and name) get filtered out.

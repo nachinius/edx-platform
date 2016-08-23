@@ -65,6 +65,9 @@ class CourseEmail(Email):
     # * All: This sends an email to anyone enrolled in the course, with any role
     #   (student, staff, or instructor)
     #
+    DEFAULT_FROM_EMAIL = (settings.FEATURES.get('BULK_EMAIL_FROM_DIFFERENT_ADDRESSES')
+                    and None
+                    or getattr(settings, 'BULK_EMAIL_DEFAULT_FROM_EMAIL', None))
     TO_OPTION_CHOICES = (
         (SEND_TO_MYSELF, 'Myself'),
         (SEND_TO_STAFF, 'Staff and instructors'),
@@ -73,7 +76,7 @@ class CourseEmail(Email):
     course_id = CourseKeyField(max_length=255, db_index=True)
     to_option = models.CharField(max_length=64, choices=TO_OPTION_CHOICES, default=SEND_TO_MYSELF)
     template_name = models.CharField(null=True, max_length=255)
-    from_addr = models.CharField(null=True, max_length=255)
+    from_addr = models.CharField(null=True, max_length=255, default=DEFAULT_FROM_EMAIL)
 
     def __unicode__(self):
         return self.subject
@@ -104,7 +107,7 @@ class CourseEmail(Email):
             html_message=html_message,
             text_message=text_message,
             template_name=template_name,
-            from_addr=from_addr,
+            from_addr=from_addr or cls.DEFAULT_FROM_EMAIL,
         )
         course_email.save()
 

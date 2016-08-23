@@ -1,0 +1,18 @@
+<%! from django.utils.translation import ugettext as _ %>
+<script type="text/javascript">
+    $(document).ready(function (){
+        $('#pay_form').find('button').removeClass('stripe-button-el');
+    });
+</script>
+<form action="${action}" method="post" id="pay_form">
+    <script
+        src="${src}" class="stripe-button"
+        data-key="${public_key}"
+        data-amount="${amount}"
+        data-name="${name}"
+        data-description='${description}'
+        data-image="${image}"
+        data-locale="auto">
+    </script>
+</form>
+

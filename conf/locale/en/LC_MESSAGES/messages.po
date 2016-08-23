@@ -18,3 +18,9 @@ msgstr ""
 # empty
 msgid "This is a key string."
 msgstr ""
+
+msgid "Welcome to Open edX!"
+msgstr "Welcome to Zana Medical!"
+
+msgid "It works! This is the default homepage for this Open edX instance."
+msgstr ""

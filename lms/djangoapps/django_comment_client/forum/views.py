@@ -5,6 +5,7 @@ Views handling read (GET) requests for the Discussion tab and inline discussions
 from functools import wraps
 import json
 import logging
+from bson import json_util
 
 from django.contrib.auth.decorators import login_required
 from django.conf import settings
@@ -79,7 +80,8 @@ def make_course_settings(course, user):
         'allow_anonymous': course.allow_anonymous,
         'allow_anonymous_to_peers': course.allow_anonymous_to_peers,
         'cohorts': [{"id": str(g.id), "name": g.name} for g in get_course_cohorts(course)],
-        'category_map': utils.get_discussion_category_map(course, user)
+        'category_map': utils.get_discussion_category_map(course, user,
+                                                        exclude_unstarted=False)
     }
 
     return obj
@@ -286,7 +288,7 @@ def forum_form_discussion(request, course_key):
             'is_course_cohorted': is_course_cohorted(course_key),  # still needed to render _thread_list_template
             'sort_preference': user.default_sort_key,
             'category_map': course_settings["category_map"],
-            'course_settings': json.dumps(course_settings)
+            'course_settings': json.dumps(course_settings, default=json_util.default)
         }
         # print "start rendering.."
         return render_to_response('discussion/index.html', context)
@@ -396,7 +398,7 @@ def single_thread(request, course_key, discussion_id, thread_id):
             'user_cohort': user_cohort,
             'sort_preference': cc_user.default_sort_key,
             'category_map': course_settings["category_map"],
-            'course_settings': json.dumps(course_settings)
+            'course_settings': json.dumps(course_settings, default=json_util.default)
         }
         return render_to_response('discussion/index.html', context)
 

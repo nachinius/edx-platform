@@ -185,7 +185,7 @@ class StudentModuleHistory(models.Model):
                                                  max_grade=instance.max_grade)
             history_entry.save()
 
-    def __unicode__(self):
+    def __repr__(self):
         return unicode(repr(self))
 
 

@@ -360,7 +360,7 @@ class LocalFSReportStore(ReportStore):
 
     def path_to(self, course_id, filename):
         """Return the full path to a given file for a given course."""
-        return os.path.join(self.root_path, urllib.quote(course_id.to_deprecated_string(), safe=''), filename)
+        return os.path.join(self.root_path, course_id.to_deprecated_string(), filename)
 
     def store(self, course_id, filename, buff, config=None):  # pylint: disable=unused-argument
         """
@@ -372,7 +372,7 @@ class LocalFSReportStore(ReportStore):
         full_path = self.path_to(course_id, filename)
         directory = os.path.dirname(full_path)
         if not os.path.exists(directory):
-            os.mkdir(directory)
+            os.makedirs(directory)
 
         with open(full_path, "wb") as f:
             f.write(buff.getvalue())
@@ -402,7 +402,9 @@ class LocalFSReportStore(ReportStore):
         files = [(filename, os.path.join(course_dir, filename)) for filename in os.listdir(course_dir)]
         files.sort(key=lambda (filename, full_path): os.path.getmtime(full_path), reverse=True)
 
+        mroot_len = len(settings.MEDIA_ROOT)
+        _build_url = lambda fp: os.path.join(settings.MEDIA_URL, urllib.quote(fp[mroot_len:]))
         return [
-            (filename, ("file://" + urllib.quote(full_path)))
+            (filename, (_build_url(full_path)))
             for filename, full_path in files
         ]

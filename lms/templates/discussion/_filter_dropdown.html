@@ -4,9 +4,14 @@ import json
 %>
 
 <%def name="render_dropdown(map)">
-    % for child in map["children"]:
+    % for child in set(map["children"]):
         % if child in map["entries"]:
             ${render_entry(map["entries"], child)}
+                % if child in map["subcategories"]:
+                    <ul class="forum-nav-browse-submenu">
+                        ${render_dropdown(map["subcategories"][child])}
+                    </ul>
+                % endif
         %else:
             ${render_category(map["subcategories"], child)}
         %endif

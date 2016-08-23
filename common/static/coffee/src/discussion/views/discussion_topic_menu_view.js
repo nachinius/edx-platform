@@ -51,7 +51,7 @@
                 var category_template = _.template($('#new-post-menu-category-template').html()),
                     entry_template = _.template($('#new-post-menu-entry-template').html());
 
-                return _.map(map.children, function(name) {
+                return _.map(Array.from(new Set(map.children)), function(name) {
                     var html = '', entry;
                     if (_.has(map.entries, name)) {
                         entry = map.entries[name];
@@ -60,6 +60,12 @@
                             id: entry.id,
                             is_cohorted: entry.is_cohorted
                         });
+
+                        if (_.has(map.subcategories, name)) {
+                            html += '<ul role="menu" class="topic-submenu">\n';
+                            html += this.renderCategoryMap(map.subcategories[name]);
+                            html += '\n</ul>';
+                        }
                     } else { // subcategory
                         html = category_template({
                             text: name,

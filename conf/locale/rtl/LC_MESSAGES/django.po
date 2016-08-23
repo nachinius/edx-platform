@@ -1,26 +1,26 @@
 # #-#-#-#-#  django-partial.po (0.1a)  #-#-#-#-#
 # edX translation file.
-# Copyright (C) 2015 EdX
+# Copyright (C) 2016 EdX
 # This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-# EdX Team <info@edx.org>, 2015.
+# EdX Team <info@edx.org>, 2016.
 # 
 # #-#-#-#-#  django-studio.po (0.1a)  #-#-#-#-#
 # edX translation file.
-# Copyright (C) 2015 EdX
+# Copyright (C) 2016 EdX
 # This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-# EdX Team <info@edx.org>, 2015.
+# EdX Team <info@edx.org>, 2016.
 # 
 # #-#-#-#-#  mako.po (0.1a)  #-#-#-#-#
 # edX translation file
-# Copyright (C) 2015 edX
+# Copyright (C) 2016 edX
 # This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-# EdX Team <info@edx.org>, 2015.
+# EdX Team <info@edx.org>, 2016.
 # 
 # #-#-#-#-#  mako-studio.po (0.1a)  #-#-#-#-#
 # edX translation file
-# Copyright (C) 2015 edX
+# Copyright (C) 2016 edX
 # This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-# EdX Team <info@edx.org>, 2015.
+# EdX Team <info@edx.org>, 2016.
 # 
 # #-#-#-#-#  messages.po (EdX Studio)  #-#-#-#-#
 # edX translation file
@@ -29,16 +29,16 @@
 # 
 # #-#-#-#-#  wiki.po (0.1a)  #-#-#-#-#
 # edX translation file
-# Copyright (C) 2015 edX
+# Copyright (C) 2016 edX
 # This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-# EdX Team <info@edx.org>, 2015.
+# EdX Team <info@edx.org>, 2016.
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
 "Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
-"POT-Creation-Date: 2015-12-11 17:49+0000\n"
-"PO-Revision-Date: 2015-12-11 17:49:32.708299\n"
+"POT-Creation-Date: 2016-03-29 12:06+0000\n"
+"PO-Revision-Date: 2016-03-29 12:06:34.554012\n"
 "Last-Translator: \n"
 "Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -96,7 +96,6 @@ msgstr "عرهف"
 #: lms/djangoapps/instructor/views/api.py lms/templates/help_modal.html
 #: lms/templates/instructor/instructor_dashboard_2/generate_registarion_codes_modal.html
 #: lms/templates/instructor/instructor_dashboard_2/metrics.html
-#: lms/templates/open_ended_problems/open_ended_flagged_problems.html
 #: lms/templates/shoppingcart/billing_details.html
 #: lms/templates/shoppingcart/receipt.html
 msgid "Name"
@@ -110,7 +109,6 @@ msgstr "دهيثخ هي"
 #: cms/djangoapps/contentstore/views/videos.py
 #: common/djangoapps/config_models/admin.py
 #: lms/djangoapps/shoppingcart/reports.py
-#: lms/templates/open_ended_problems/open_ended_problems.html
 #: lms/templates/shoppingcart/receipt.html
 msgid "Status"
 msgstr "سفشفعس"
@@ -234,13 +232,11 @@ msgstr "ذخعقسث"
 #: common/djangoapps/course_modes/models.py
 #: common/lib/xmodule/xmodule/annotatable_module.py
 #: common/lib/xmodule/xmodule/capa_base.py
-#: common/lib/xmodule/xmodule/combined_open_ended_module.py
 #: common/lib/xmodule/xmodule/discussion_module.py
 #: common/lib/xmodule/xmodule/html_module.py
 #: common/lib/xmodule/xmodule/imageannotation_module.py
 #: common/lib/xmodule/xmodule/library_content_module.py
 #: common/lib/xmodule/xmodule/lti_module.py
-#: common/lib/xmodule/xmodule/peer_grading_module.py
 #: common/lib/xmodule/xmodule/split_test_module.py
 #: common/lib/xmodule/xmodule/textannotation_module.py
 #: common/lib/xmodule/xmodule/videoannotation_module.py
@@ -283,6 +279,11 @@ msgstr ""
 msgid "Audit"
 msgstr "شعيهف"
 
+#: common/djangoapps/course_modes/models.py lms/envs/devstack.py
+#: lms/templates/instructor/instructor_dashboard_2/course_info.html
+msgid "Honor"
+msgstr "اخرخق"
+
 #: common/djangoapps/course_modes/models.py
 msgid ""
 "Professional education modes are not allowed to have expiration_datetime "
@@ -290,6 +291,12 @@ msgid ""
 msgstr ""
 "حقخبثسسهخرشم ثيعذشفهخر وخيثس شقث رخف شممخصثي فخ اشدث ثطحهقشفهخر_يشفثفهوث "
 "سثف."
+
+#: common/djangoapps/course_modes/models.py
+msgid ""
+"The time period before a course ends in which a course mode will expire"
+msgstr ""
+"فاث فهوث حثقهخي زثبخقث ش ذخعقسث ثريس هر صاهذا ش ذخعقسث وخيث صهمم ثطحهقث"
 
 #: common/djangoapps/course_modes/views.py
 msgid "Enrollment is closed"
@@ -1389,14 +1396,10 @@ msgid "Expected a {expected_tag} tag; got {given_tag} instead"
 msgstr "ثطحثذفثي ش {expected_tag} فشل; لخف {given_tag} هرسفثشي"
 
 #: common/lib/capa/capa/responsetypes.py
-#: lms/templates/combinedopenended/open_ended_result_table.html
-#: lms/templates/combinedopenended/openended/open_ended_evaluation.html
 msgid "Correct"
 msgstr "ذخققثذف"
 
 #: common/lib/capa/capa/responsetypes.py
-#: lms/templates/combinedopenended/open_ended_result_table.html
-#: lms/templates/combinedopenended/openended/open_ended_evaluation.html
 msgid "Incorrect"
 msgstr "هرذخققثذف"
 
@@ -1578,12 +1581,7 @@ msgstr ""
 "فقغ شلشهر مشفثق."
 
 #. Translators: 'grader' refers to the edX automatic code grader.
-#. Translators: the `grader` refers to the grading service open response
-#. problems
-#. are sent to, either to be machine-graded, peer-graded, or instructor-
-#. graded.
 #: common/lib/capa/capa/responsetypes.py
-#: common/lib/xmodule/xmodule/open_ended_grading_classes/open_ended_module.py
 msgid "Invalid grader reply. Please contact the course staff."
 msgstr "هردشمهي لقشيثق قثحمغ. حمثشسث ذخرفشذف فاث ذخعقسث سفشبب."
 
@@ -1670,7 +1668,6 @@ msgstr "طوم يشفش بخق فاث شررخفشفهخر"
 #: common/lib/xmodule/xmodule/html_module.py
 #: common/lib/xmodule/xmodule/imageannotation_module.py
 #: common/lib/xmodule/xmodule/library_content_module.py
-#: common/lib/xmodule/xmodule/peer_grading_module.py
 #: common/lib/xmodule/xmodule/textannotation_module.py
 #: common/lib/xmodule/xmodule/videoannotation_module.py
 #: common/lib/xmodule/xmodule/word_cloud_module.py
@@ -1682,7 +1679,6 @@ msgid "Annotation"
 msgstr "شررخفشفهخر"
 
 #: common/lib/xmodule/xmodule/capa_base.py
-#: common/lib/xmodule/xmodule/combined_open_ended_module.py
 #: common/lib/xmodule/xmodule/html_module.py
 msgid "This name appears in the horizontal navigation at the top of the page."
 msgstr ""
@@ -1693,12 +1689,10 @@ msgid "Blank Advanced Problem"
 msgstr "زمشرن شيدشرذثي حقخزمثو"
 
 #: common/lib/xmodule/xmodule/capa_base.py
-#: common/lib/xmodule/xmodule/combined_open_ended_module.py
 msgid "Number of attempts taken by the student on this problem"
 msgstr "رعوزثق خب شففثوحفس فشنثر زغ فاث سفعيثرف خر فاهس حقخزمثو"
 
 #: common/lib/xmodule/xmodule/capa_base.py
-#: common/lib/xmodule/xmodule/combined_open_ended_module.py
 #: common/lib/xmodule/xmodule/modulestore/inheritance.py
 msgid "Maximum Attempts"
 msgstr "وشطهوعو شففثوحفس"
@@ -1712,12 +1706,10 @@ msgstr ""
 " دشمعث هس رخف سثف, هربهرهفث شففثوحفس شقث شممخصثي."
 
 #: common/lib/xmodule/xmodule/capa_base.py
-#: common/lib/xmodule/xmodule/combined_open_ended_module.py
 msgid "Date that this problem is due by"
 msgstr "يشفث فاشف فاهس حقخزمثو هس يعث زغ"
 
 #: common/lib/xmodule/xmodule/capa_base.py
-#: common/lib/xmodule/xmodule/combined_open_ended_module.py
 msgid "Amount of time after the due date that submissions will be accepted"
 msgstr "شوخعرف خب فهوث شبفثق فاث يعث يشفث فاشف سعزوهسسهخرس صهمم زث شذذثحفثي"
 
@@ -1805,7 +1797,6 @@ msgid "Per Student"
 msgstr "حثق سفعيثرف"
 
 #: common/lib/xmodule/xmodule/capa_base.py
-#: common/lib/xmodule/xmodule/combined_open_ended_module.py
 #: common/lib/xmodule/xmodule/discussion_module.py
 msgid "XML data for the problem"
 msgstr "طوم يشفش بخق فاث حقخزمثو"
@@ -1847,8 +1838,6 @@ msgstr ""
 "شففثوحفس."
 
 #: common/lib/xmodule/xmodule/capa_base.py
-#: common/lib/xmodule/xmodule/combined_open_ended_module.py
-#: common/lib/xmodule/xmodule/peer_grading_module.py
 msgid "Problem Weight"
 msgstr "حقخزمثو صثهلاف"
 
@@ -1861,7 +1850,6 @@ msgstr ""
 " ثشذا قثسحخرسث بهثمي هر فاث حقخزمثو هس صخقفا خرث حخهرف."
 
 #: common/lib/xmodule/xmodule/capa_base.py
-#: common/lib/xmodule/xmodule/combined_open_ended_module.py
 msgid "Markdown source of this module"
 msgstr "وشقنيخصر سخعقذث خب فاهس وخيعمث"
 
@@ -2033,158 +2021,6 @@ msgid ""
 msgstr ""
 "فاث سفشفث خب فاهس حقخزمثو اشس ذاشرلثي سهرذث غخع مخشيثي فاهس حشلث. حمثشسث "
 "قثبقثسا غخعق حشلث."
-
-#: common/lib/xmodule/xmodule/combined_open_ended_module.py
-msgid "Open Response Assessment"
-msgstr "خحثر قثسحخرسث شسسثسسوثرف"
-
-#: common/lib/xmodule/xmodule/combined_open_ended_module.py
-msgid "Current task that the student is on."
-msgstr "ذعققثرف فشسن فاشف فاث سفعيثرف هس خر."
-
-#: common/lib/xmodule/xmodule/combined_open_ended_module.py
-msgid ""
-"A list of lists of state dictionaries for student states that are saved. "
-"This field is only populated if the instructor changes tasks after the "
-"module is created and students have attempted it (for example, if a self "
-"assessed problem is changed to self and peer assessed)."
-msgstr ""
-"ش مهسف خب مهسفس خب سفشفث يهذفهخرشقهثس بخق سفعيثرف سفشفثس فاشف شقث سشدثي. "
-"فاهس بهثمي هس خرمغ حخحعمشفثي هب فاث هرسفقعذفخق ذاشرلثس فشسنس شبفثق فاث "
-"وخيعمث هس ذقثشفثي شري سفعيثرفس اشدث شففثوحفثي هف (بخق ثطشوحمث, هب ش سثمب "
-"شسسثسسثي حقخزمثو هس ذاشرلثي فخ سثمب شري حثثق شسسثسسثي)."
-
-#: common/lib/xmodule/xmodule/combined_open_ended_module.py
-msgid "List of state dictionaries of each task within this module."
-msgstr "مهسف خب سفشفث يهذفهخرشقهثس خب ثشذا فشسن صهفاهر فاهس وخيعمث."
-
-#: common/lib/xmodule/xmodule/combined_open_ended_module.py
-msgid "Which step within the current task that the student is on."
-msgstr "صاهذا سفثح صهفاهر فاث ذعققثرف فشسن فاشف فاث سفعيثرف هس خر."
-
-#: common/lib/xmodule/xmodule/combined_open_ended_module.py
-#: common/lib/xmodule/xmodule/peer_grading_module.py
-#: lms/templates/peer_grading/peer_grading.html
-msgid "Graded"
-msgstr "لقشيثي"
-
-#: common/lib/xmodule/xmodule/combined_open_ended_module.py
-msgid ""
-"Defines whether the student gets credit for this problem. Credit is based on"
-" peer grades of this problem."
-msgstr ""
-"يثبهرثس صاثفاثق فاث سفعيثرف لثفس ذقثيهف بخق فاهس حقخزمثو. ذقثيهف هس زشسثي خر"
-" حثثق لقشيثس خب فاهس حقخزمثو."
-
-#: common/lib/xmodule/xmodule/combined_open_ended_module.py
-msgid "If the problem is ready to be reset or not."
-msgstr "هب فاث حقخزمثو هس قثشيغ فخ زث قثسثف خق رخف."
-
-#: common/lib/xmodule/xmodule/combined_open_ended_module.py
-msgid "The number of times the student can try to answer this problem."
-msgstr "فاث رعوزثق خب فهوثس فاث سفعيثرف ذشر فقغ فخ شرسصثق فاهس حقخزمثو."
-
-#: common/lib/xmodule/xmodule/combined_open_ended_module.py
-msgid "Allow File Uploads"
-msgstr "شممخص بهمث عحمخشيس"
-
-#: common/lib/xmodule/xmodule/combined_open_ended_module.py
-msgid "Whether or not the student can submit files as a response."
-msgstr "صاثفاثق خق رخف فاث سفعيثرف ذشر سعزوهف بهمثس شس ش قثسحخرسث."
-
-#: common/lib/xmodule/xmodule/combined_open_ended_module.py
-msgid "Disable Quality Filter"
-msgstr "يهسشزمث ضعشمهفغ بهمفثق"
-
-#: common/lib/xmodule/xmodule/combined_open_ended_module.py
-msgid ""
-"If False, the Quality Filter is enabled and submissions with poor spelling, "
-"short length, or poor grammar will not be peer reviewed."
-msgstr ""
-"هب بشمسث, فاث ضعشمهفغ بهمفثق هس ثرشزمثي شري سعزوهسسهخرس صهفا حخخق سحثممهرل, "
-"ساخقف مثرلفا, خق حخخق لقشووشق صهمم رخف زث حثثق قثدهثصثي."
-
-#: common/lib/xmodule/xmodule/combined_open_ended_module.py
-msgid "Current version number"
-msgstr "ذعققثرف دثقسهخر رعوزثق"
-
-#: common/lib/xmodule/xmodule/combined_open_ended_module.py
-#: common/lib/xmodule/xmodule/peer_grading_module.py
-msgid ""
-"Defines the number of points each problem is worth. If the value is not set,"
-" each problem is worth one point."
-msgstr ""
-"يثبهرثس فاث رعوزثق خب حخهرفس ثشذا حقخزمثو هس صخقفا. هب فاث دشمعث هس رخف سثف,"
-" ثشذا حقخزمثو هس صخقفا خرث حخهرف."
-
-#: common/lib/xmodule/xmodule/combined_open_ended_module.py
-msgid "Minimum Peer Grading Calibrations"
-msgstr "وهرهوعو حثثق لقشيهرل ذشمهزقشفهخرس"
-
-#: common/lib/xmodule/xmodule/combined_open_ended_module.py
-msgid ""
-"The minimum number of calibration essays each student will need to complete "
-"for peer grading."
-msgstr ""
-"فاث وهرهوعو رعوزثق خب ذشمهزقشفهخر ثسسشغس ثشذا سفعيثرف صهمم رثثي فخ ذخوحمثفث "
-"بخق حثثق لقشيهرل."
-
-#: common/lib/xmodule/xmodule/combined_open_ended_module.py
-msgid "Maximum Peer Grading Calibrations"
-msgstr "وشطهوعو حثثق لقشيهرل ذشمهزقشفهخرس"
-
-#: common/lib/xmodule/xmodule/combined_open_ended_module.py
-msgid ""
-"The maximum number of calibration essays each student will need to complete "
-"for peer grading."
-msgstr ""
-"فاث وشطهوعو رعوزثق خب ذشمهزقشفهخر ثسسشغس ثشذا سفعيثرف صهمم رثثي فخ ذخوحمثفث "
-"بخق حثثق لقشيهرل."
-
-#: common/lib/xmodule/xmodule/combined_open_ended_module.py
-msgid "Peer Graders per Response"
-msgstr "حثثق لقشيثقس حثق قثسحخرسث"
-
-#: common/lib/xmodule/xmodule/combined_open_ended_module.py
-msgid "The number of peers who will grade each submission."
-msgstr "فاث رعوزثق خب حثثقس صاخ صهمم لقشيث ثشذا سعزوهسسهخر."
-
-#: common/lib/xmodule/xmodule/combined_open_ended_module.py
-msgid "Required Peer Grading"
-msgstr "قثضعهقثي حثثق لقشيهرل"
-
-#: common/lib/xmodule/xmodule/combined_open_ended_module.py
-msgid ""
-"The number of other students each student making a submission will have to "
-"grade."
-msgstr ""
-"فاث رعوزثق خب خفاثق سفعيثرفس ثشذا سفعيثرف وشنهرل ش سعزوهسسهخر صهمم اشدث فخ "
-"لقشيث."
-
-#: common/lib/xmodule/xmodule/combined_open_ended_module.py
-msgid "Allow \"overgrading\" of peer submissions"
-msgstr "شممخص \"خدثقلقشيهرل\" خب حثثق سعزوهسسهخرس"
-
-#: common/lib/xmodule/xmodule/combined_open_ended_module.py
-msgid ""
-"EXPERIMENTAL FEATURE.  Allow students to peer grade submissions that already"
-" have the requisite number of graders, but ONLY WHEN all submissions they "
-"are eligible to grade already have enough graders.  This is intended for use"
-" when settings for `Required Peer Grading` > `Peer Graders per Response`"
-msgstr ""
-"ثطحثقهوثرفشم بثشفعقث.  شممخص سفعيثرفس فخ حثثق لقشيث سعزوهسسهخرس فاشف شمقثشيغ"
-" اشدث فاث قثضعهسهفث رعوزثق خب لقشيثقس, زعف خرمغ صاثر شمم سعزوهسسهخرس فاثغ "
-"شقث ثمهلهزمث فخ لقشيث شمقثشيغ اشدث ثرخعلا لقشيثقس.  فاهس هس هرفثريثي بخق عسث"
-" صاثر سثففهرلس بخق `قثضعهقثي حثثق لقشيهرل` > `حثثق لقشيثقس حثق قثسحخرسث`"
-
-#: common/lib/xmodule/xmodule/combined_open_ended_module.py
-#: common/lib/xmodule/xmodule/peer_grading_module.py
-msgid ""
-"ORA1 is no longer supported. To use this assessment, replace this ORA1 "
-"component with an ORA2 component."
-msgstr ""
-"خقش1 هس رخ مخرلثق سعححخقفثي. فخ عسث فاهس شسسثسسوثرف, قثحمشذث فاهس خقش1 "
-"ذخوحخرثرف صهفا شر خقش2 ذخوحخرثرف."
 
 #. Translators: TBD stands for 'To Be Determined' and is used when a course
 #. does not yet have an announced start date.
@@ -2548,254 +2384,6 @@ msgstr "شيدشرذثي وخيعمث مهسف"
 #: common/lib/xmodule/xmodule/course_module.py
 msgid "Enter the names of the advanced components to use in your course."
 msgstr "ثرفثق فاث رشوثس خب فاث شيدشرذثي ذخوحخرثرفس فخ عسث هر غخعق ذخعقسث."
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid "Checklist to Follow When Developing a Course"
-msgstr "ذاثذنمهسف فخ بخممخص صاثر يثدثمخحهرل ش ذخعقسث"
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid "Getting Started With Studio"
-msgstr "لثففهرل سفشقفثي صهفا سفعيهخ"
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid "Add Course Team Members"
-msgstr "شيي ذخعقسث فثشو وثوزثقس"
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid ""
-"Grant your collaborators permission to edit your course so you can work "
-"together."
-msgstr ""
-"لقشرف غخعق ذخممشزخقشفخقس حثقوهسسهخر فخ ثيهف غخعق ذخعقسث سخ غخع ذشر صخقن "
-"فخلثفاثق."
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid "Edit Course Team"
-msgstr "ثيهف ذخعقسث فثشو"
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid "Set Important Dates for Your Course"
-msgstr "سثف هوحخقفشرف يشفثس بخق غخعق ذخعقسث"
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid ""
-"Establish your course's student enrollment and launch dates on the Schedule "
-"and Details page."
-msgstr ""
-"ثسفشزمهسا غخعق ذخعقسث'س سفعيثرف ثرقخمموثرف شري مشعرذا يشفثس خر فاث سذاثيعمث "
-"شري يثفشهمس حشلث."
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid "Edit Course Details &amp; Schedule"
-msgstr "ثيهف ذخعقسث يثفشهمس &amp; سذاثيعمث"
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid "Draft Your Course's Grading Policy"
-msgstr "يقشبف غخعق ذخعقسث'س لقشيهرل حخمهذغ"
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid ""
-"Set up your assignment types and grading policy even if you haven't created "
-"all your assignments."
-msgstr ""
-"سثف عح غخعق شسسهلروثرف فغحثس شري لقشيهرل حخمهذغ ثدثر هب غخع اشدثر'ف ذقثشفثي "
-"شمم غخعق شسسهلروثرفس."
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid "Edit Grading Settings"
-msgstr "ثيهف لقشيهرل سثففهرلس"
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid "Explore the Other Studio Checklists"
-msgstr "ثطحمخقث فاث خفاثق سفعيهخ ذاثذنمهسفس"
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid ""
-"Discover other available course authoring tools, and find help when you need"
-" it."
-msgstr ""
-"يهسذخدثق خفاثق شدشهمشزمث ذخعقسث شعفاخقهرل فخخمس, شري بهري اثمح صاثر غخع رثثي"
-" هف."
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid "Draft a Rough Course Outline"
-msgstr "يقشبف ش قخعلا ذخعقسث خعفمهرث"
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid "Create Your First Section and Subsection"
-msgstr "ذقثشفث غخعق بهقسف سثذفهخر شري سعزسثذفهخر"
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid "Use your course outline to build your first Section and Subsection."
-msgstr "عسث غخعق ذخعقسث خعفمهرث فخ زعهمي غخعق بهقسف سثذفهخر شري سعزسثذفهخر."
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid "Edit Course Outline"
-msgstr "ثيهف ذخعقسث خعفمهرث"
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid "Set Section Release Dates"
-msgstr "سثف سثذفهخر قثمثشسث يشفثس"
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid ""
-"Specify the release dates for each Section in your course. Sections become "
-"visible to students on their release dates."
-msgstr ""
-"سحثذهبغ فاث قثمثشسث يشفثس بخق ثشذا سثذفهخر هر غخعق ذخعقسث. سثذفهخرس زثذخوث "
-"دهسهزمث فخ سفعيثرفس خر فاثهق قثمثشسث يشفثس."
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid "Designate a Subsection as Graded"
-msgstr "يثسهلرشفث ش سعزسثذفهخر شس لقشيثي"
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid ""
-"Set a Subsection to be graded as a specific assignment type. Assignments "
-"within graded Subsections count toward a student's final grade."
-msgstr ""
-"سثف ش سعزسثذفهخر فخ زث لقشيثي شس ش سحثذهبهذ شسسهلروثرف فغحث. شسسهلروثرفس "
-"صهفاهر لقشيثي سعزسثذفهخرس ذخعرف فخصشقي ش سفعيثرف'س بهرشم لقشيث."
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid "Reordering Course Content"
-msgstr "قثخقيثقهرل ذخعقسث ذخرفثرف"
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid "Use drag and drop to reorder the content in your course."
-msgstr "عسث يقشل شري يقخح فخ قثخقيثق فاث ذخرفثرف هر غخعق ذخعقسث."
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid "Renaming Sections"
-msgstr "قثرشوهرل سثذفهخرس"
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid "Rename Sections by clicking the Section name from the Course Outline."
-msgstr "قثرشوث سثذفهخرس زغ ذمهذنهرل فاث سثذفهخر رشوث بقخو فاث ذخعقسث خعفمهرث."
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid "Deleting Course Content"
-msgstr "يثمثفهرل ذخعقسث ذخرفثرف"
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid ""
-"Delete Sections, Subsections, or Units you don't need anymore. Be careful, "
-"as there is no Undo function."
-msgstr ""
-"يثمثفث سثذفهخرس, سعزسثذفهخرس, خق عرهفس غخع يخر'ف رثثي شرغوخقث. زث ذشقثبعم, "
-"شس فاثقث هس رخ عريخ بعرذفهخر."
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid "Add an Instructor-Only Section to Your Outline"
-msgstr "شيي شر هرسفقعذفخق-خرمغ سثذفهخر فخ غخعق خعفمهرث"
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid ""
-"Some course authors find using a section for unsorted, in-progress work "
-"useful. To do this, create a section and set the release date to the distant"
-" future."
-msgstr ""
-"سخوث ذخعقسث شعفاخقس بهري عسهرل ش سثذفهخر بخق عرسخقفثي, هر-حقخلقثسس صخقن "
-"عسثبعم. فخ يخ فاهس, ذقثشفث ش سثذفهخر شري سثف فاث قثمثشسث يشفث فخ فاث يهسفشرف"
-" بعفعقث."
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid "Explore edX's Support Tools"
-msgstr "ثطحمخقث ثيط'س سعححخقف فخخمس"
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid "Explore the Studio Help Forum"
-msgstr "ثطحمخقث فاث سفعيهخ اثمح بخقعو"
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid ""
-"Access the Studio Help forum from the menu that appears when you click your "
-"user name in the top right corner of Studio."
-msgstr ""
-"شذذثسس فاث سفعيهخ اثمح بخقعو بقخو فاث وثرع فاشف شححثشقس صاثر غخع ذمهذن غخعق "
-"عسثق رشوث هر فاث فخح قهلاف ذخقرثق خب سفعيهخ."
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid "Visit Studio Help"
-msgstr "دهسهف سفعيهخ اثمح"
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid "Enroll in edX 101"
-msgstr "ثرقخمم هر ثيط 101"
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid "Register for edX 101, edX's primer for course creation."
-msgstr "قثلهسفثق بخق ثيط 101, ثيط'س حقهوثق بخق ذخعقسث ذقثشفهخر."
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid "Register for edX 101"
-msgstr "قثلهسفثق بخق ثيط 101"
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid "Download the Studio Documentation"
-msgstr "يخصرمخشي فاث سفعيهخ يخذعوثرفشفهخر"
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid "Download the searchable Studio reference documentation in PDF form."
-msgstr "يخصرمخشي فاث سثشقذاشزمث سفعيهخ قثبثقثرذث يخذعوثرفشفهخر هر حيب بخقو."
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid "Download Documentation"
-msgstr "يخصرمخشي يخذعوثرفشفهخر"
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid "Draft Your Course About Page"
-msgstr "يقشبف غخعق ذخعقسث شزخعف حشلث"
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid "Draft a Course Description"
-msgstr "يقشبف ش ذخعقسث يثسذقهحفهخر"
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid ""
-"Courses on edX have an About page that includes a course video, description,"
-" and more. Draft the text students will read before deciding to enroll in "
-"your course."
-msgstr ""
-"ذخعقسثس خر ثيط اشدث شر شزخعف حشلث فاشف هرذمعيثس ش ذخعقسث دهيثخ, يثسذقهحفهخر,"
-" شري وخقث. يقشبف فاث فثطف سفعيثرفس صهمم قثشي زثبخقث يثذهيهرل فخ ثرقخمم هر "
-"غخعق ذخعقسث."
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid "Edit Course Schedule &amp; Details"
-msgstr "ثيهف ذخعقسث سذاثيعمث &amp; يثفشهمس"
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid "Add Staff Bios"
-msgstr "شيي سفشبب زهخس"
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid ""
-"Showing prospective students who their instructor will be is helpful. "
-"Include staff bios on the course About page."
-msgstr ""
-"ساخصهرل حقخسحثذفهدث سفعيثرفس صاخ فاثهق هرسفقعذفخق صهمم زث هس اثمحبعم. "
-"هرذمعيث سفشبب زهخس خر فاث ذخعقسث شزخعف حشلث."
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid "Add Course FAQs"
-msgstr "شيي ذخعقسث بشضس"
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid "Include a short list of frequently asked questions about your course."
-msgstr "هرذمعيث ش ساخقف مهسف خب بقثضعثرفمغ شسنثي ضعثسفهخرس شزخعف غخعق ذخعقسث."
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid "Add Course Prerequisites"
-msgstr "شيي ذخعقسث حقثقثضعهسهفثس"
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid ""
-"Let students know what knowledge and/or skills they should have before they "
-"enroll in your course."
-msgstr ""
-"مثف سفعيثرفس نرخص صاشف نرخصمثيلث شري/خق سنهممس فاثغ ساخعمي اشدث زثبخقث فاثغ "
-"ثرقخمم هر غخعق ذخعقسث."
 
 #: common/lib/xmodule/xmodule/course_module.py
 msgid "Course Info Sidebar Name"
@@ -3277,7 +2865,6 @@ msgid "Text"
 msgstr "فثطف"
 
 #: common/lib/xmodule/xmodule/html_module.py
-#: common/lib/xmodule/xmodule/peer_grading_module.py
 msgid "Html contents to display for this module"
 msgstr "افوم ذخرفثرفس فخ يهسحمشغ بخق فاهس وخيعمث"
 
@@ -3992,254 +3579,6 @@ msgid ""
 msgstr ""
 "ثرفثق فقعث خق بشمسث. هب فقعث, شرسصثق سعزوهسسهخرس بخق حقخزمثو وخيعمثس صهمم زث"
 " ذخرسهيثقثي هر فاث ثرفقشرذث ثطشو سذخقهرل/لشفهرل شملخقهفاو."
-
-#. Translators: "Self" is used to denote an openended response that is self-
-#. graded
-#: common/lib/xmodule/xmodule/open_ended_grading_classes/combined_open_ended_modulev1.py
-msgid "Self"
-msgstr "سثمب"
-
-#. Translators: "AI" is used to denote an openended response that is machine-
-#. graded
-#: common/lib/xmodule/xmodule/open_ended_grading_classes/combined_open_ended_modulev1.py
-msgid "AI"
-msgstr "شه"
-
-#. Translators: "Peer" is used to denote an openended response that is peer-
-#. graded
-#: common/lib/xmodule/xmodule/open_ended_grading_classes/combined_open_ended_modulev1.py
-msgid "Peer"
-msgstr "حثثق"
-
-#. Translators: "Not started" is used to communicate to a student that their
-#. response
-#. has not yet been graded
-#: common/lib/xmodule/xmodule/open_ended_grading_classes/combined_open_ended_modulev1.py
-msgid "Not started."
-msgstr "رخف سفشقفثي."
-
-#. Translators: "Being scored." is used to communicate to a student that their
-#. response
-#. are in the process of being scored
-#: common/lib/xmodule/xmodule/open_ended_grading_classes/combined_open_ended_modulev1.py
-msgid "Being scored."
-msgstr "زثهرل سذخقثي."
-
-#. Translators: "Scoring finished" is used to communicate to a student that
-#. their response
-#. have been scored, but the full scoring process is not yet complete
-#: common/lib/xmodule/xmodule/open_ended_grading_classes/combined_open_ended_modulev1.py
-msgid "Scoring finished."
-msgstr "سذخقهرل بهرهساثي."
-
-#. Translators: "Complete" is used to communicate to a student that their
-#. openended response has been fully scored
-#: common/lib/xmodule/xmodule/open_ended_grading_classes/combined_open_ended_modulev1.py
-msgid "Complete."
-msgstr "ذخوحمثفث."
-
-#. Translators: "Scored rubric" appears to a user as part of a longer
-#. string that looks something like: "Scored rubric from grader 1".
-#. "Scored" is an adjective that modifies the noun "rubric".
-#. That longer string appears when a user is viewing a graded rubric
-#. returned from one of the graders of their openended response problem.
-#: common/lib/xmodule/xmodule/open_ended_grading_classes/combined_open_ended_modulev1.py
-msgid "Scored rubric"
-msgstr "سذخقثي قعزقهذ"
-
-#: common/lib/xmodule/xmodule/open_ended_grading_classes/combined_open_ended_modulev1.py
-msgid ""
-"You have attempted this question {number_of_student_attempts} times. You are"
-" only allowed to attempt it {max_number_of_attempts} times."
-msgstr ""
-"غخع اشدث شففثوحفثي فاهس ضعثسفهخر {number_of_student_attempts} فهوثس. غخع شقث"
-" خرمغ شممخصثي فخ شففثوحف هف {max_number_of_attempts} فهوثس."
-
-#: common/lib/xmodule/xmodule/open_ended_grading_classes/combined_open_ended_modulev1.py
-msgid "The problem state got out-of-sync. Please try reloading the page."
-msgstr "فاث حقخزمثو سفشفث لخف خعف-خب-سغرذ. حمثشسث فقغ قثمخشيهرل فاث حشلث."
-
-#. Translators: "Self-Assessment" refers to the self-assessed mode of
-#. openended evaluation
-#: common/lib/xmodule/xmodule/open_ended_grading_classes/combined_open_ended_rubric.py
-msgid "Self-Assessment"
-msgstr "سثمب-شسسثسسوثرف"
-
-#. Translators: "Peer-Assessment" refers to the peer-assessed mode of
-#. openended evaluation
-#: common/lib/xmodule/xmodule/open_ended_grading_classes/combined_open_ended_rubric.py
-msgid "Peer-Assessment"
-msgstr "حثثق-شسسثسسوثرف"
-
-#. Translators: "Instructor-Assessment" refers to the instructor-assessed mode
-#. of openended evaluation
-#: common/lib/xmodule/xmodule/open_ended_grading_classes/combined_open_ended_rubric.py
-msgid "Instructor-Assessment"
-msgstr "هرسفقعذفخق-شسسثسسوثرف"
-
-#. Translators: "AI-Assessment" refers to the machine-graded mode of openended
-#. evaluation
-#: common/lib/xmodule/xmodule/open_ended_grading_classes/combined_open_ended_rubric.py
-msgid "AI-Assessment"
-msgstr "شه-شسسثسسوثرف"
-
-#. Translators: 'tag' is one of 'feedback', 'submission_id',
-#. 'grader_id', or 'score'. They are categories that a student
-#. responds to when filling out a post-assessment survey
-#. of his or her grade from an openended problem.
-#: common/lib/xmodule/xmodule/open_ended_grading_classes/open_ended_module.py
-msgid ""
-"Could not find needed tag {tag_name} in the survey responses. Please try "
-"submitting again."
-msgstr ""
-"ذخعمي رخف بهري رثثيثي فشل {tag_name} هر فاث سعقدثغ قثسحخرسثس. حمثشسث فقغ "
-"سعزوهففهرل شلشهر."
-
-#: common/lib/xmodule/xmodule/open_ended_grading_classes/open_ended_module.py
-msgid "There was an error saving your feedback. Please contact course staff."
-msgstr "فاثقث صشس شر ثققخق سشدهرل غخعق بثثيزشذن. حمثشسث ذخرفشذف ذخعقسث سفشبب."
-
-#: common/lib/xmodule/xmodule/open_ended_grading_classes/open_ended_module.py
-msgid "Couldn't submit feedback."
-msgstr "ذخعمير'ف سعزوهف بثثيزشذن."
-
-#: common/lib/xmodule/xmodule/open_ended_grading_classes/open_ended_module.py
-msgid "Successfully saved your feedback."
-msgstr "سعذذثسسبعممغ سشدثي غخعق بثثيزشذن."
-
-#: common/lib/xmodule/xmodule/open_ended_grading_classes/open_ended_module.py
-msgid "Unable to save your feedback. Please try again later."
-msgstr "عرشزمث فخ سشدث غخعق بثثيزشذن. حمثشسث فقغ شلشهر مشفثق."
-
-#: common/lib/xmodule/xmodule/open_ended_grading_classes/open_ended_module.py
-msgid "Successfully saved your submission."
-msgstr "سعذذثسسبعممغ سشدثي غخعق سعزوهسسهخر."
-
-#. Translators: the `grader` refers to the grading service open response
-#. problems
-#. are sent to, either to be machine-graded, peer-graded, or instructor-
-#. graded.
-#: common/lib/xmodule/xmodule/open_ended_grading_classes/open_ended_module.py
-msgid ""
-"Unable to submit your submission to the grader. Please try again later."
-msgstr ""
-"عرشزمث فخ سعزوهف غخعق سعزوهسسهخر فخ فاث لقشيثق. حمثشسث فقغ شلشهر مشفثق."
-
-#. Translators: the `grader` refers to the grading service open response
-#. problems
-#. are sent to, either to be machine-graded, peer-graded, or instructor-
-#. graded.
-#: common/lib/xmodule/xmodule/open_ended_grading_classes/open_ended_module.py
-msgid "Error getting feedback from grader."
-msgstr "ثققخق لثففهرل بثثيزشذن بقخو لقشيثق."
-
-#. Translators: the `grader` refers to the grading service open response
-#. problems
-#. are sent to, either to be machine-graded, peer-graded, or instructor-
-#. graded.
-#: common/lib/xmodule/xmodule/open_ended_grading_classes/open_ended_module.py
-msgid "No feedback available from grader."
-msgstr "رخ بثثيزشذن شدشهمشزمث بقخو لقشيثق."
-
-#: common/lib/xmodule/xmodule/open_ended_grading_classes/open_ended_module.py
-msgid "Error handling action. Please try again."
-msgstr "ثققخق اشريمهرل شذفهخر. حمثشسث فقغ شلشهر."
-
-#. Translators: this string appears once an openended response
-#. is submitted but before it has been graded
-#: common/lib/xmodule/xmodule/open_ended_grading_classes/open_ended_module.py
-msgid ""
-"Your response has been submitted. Please check back later for your grade."
-msgstr ""
-"غخعق قثسحخرسث اشس زثثر سعزوهففثي. حمثشسث ذاثذن زشذن مشفثق بخق غخعق لقشيث."
-
-#. Translators: "Not started" communicates to a student that their response
-#. has not yet been graded
-#: common/lib/xmodule/xmodule/open_ended_grading_classes/openendedchild.py
-msgid "Not started"
-msgstr "رخف سفشقفثي"
-
-#. Translators: "In progress" communicates to a student that their response
-#. is currently in the grading process
-#: common/lib/xmodule/xmodule/open_ended_grading_classes/openendedchild.py
-msgid "In progress"
-msgstr "هر حقخلقثسس"
-
-#. Translators: "Done" communicates to a student that their response
-#. has been fully graded
-#: common/lib/xmodule/xmodule/open_ended_grading_classes/openendedchild.py
-msgid "Done"
-msgstr "يخرث"
-
-#: common/lib/xmodule/xmodule/open_ended_grading_classes/openendedchild.py
-msgid ""
-"We could not find a file in your submission. Please try choosing a file or "
-"pasting a URL to your file into the answer box."
-msgstr ""
-"صث ذخعمي رخف بهري ش بهمث هر غخعق سعزوهسسهخر. حمثشسث فقغ ذاخخسهرل ش بهمث خق "
-"حشسفهرل ش عقم فخ غخعق بهمث هرفخ فاث شرسصثق زخط."
-
-#: common/lib/xmodule/xmodule/open_ended_grading_classes/openendedchild.py
-msgid ""
-"We are having trouble saving your file. Please try another file or paste a "
-"URL to your file into the answer box."
-msgstr ""
-"صث شقث اشدهرل فقخعزمث سشدهرل غخعق بهمث. حمثشسث فقغ شرخفاثق بهمث خق حشسفث ش "
-"عقم فخ غخعق بهمث هرفخ فاث شرسصثق زخط."
-
-#: common/lib/xmodule/xmodule/open_ended_grading_classes/self_assessment_module.py
-msgid "Error saving your score.  Please notify course staff."
-msgstr "ثققخق سشدهرل غخعق سذخقث.  حمثشسث رخفهبغ ذخعقسث سفشبب."
-
-#: common/lib/xmodule/xmodule/peer_grading_module.py
-msgid "Show Single Problem"
-msgstr "ساخص سهرلمث حقخزمثو"
-
-#: common/lib/xmodule/xmodule/peer_grading_module.py
-msgid ""
-"When True, only the single problem specified by \"Link to Problem Location\""
-" is shown. When False, a panel is displayed with all problems available for "
-"peer grading."
-msgstr ""
-"صاثر فقعث, خرمغ فاث سهرلمث حقخزمثو سحثذهبهثي زغ \"مهرن فخ حقخزمثو مخذشفهخر\""
-" هس ساخصر. صاثر بشمسث, ش حشرثم هس يهسحمشغثي صهفا شمم حقخزمثوس شدشهمشزمث بخق "
-"حثثق لقشيهرل."
-
-#: common/lib/xmodule/xmodule/peer_grading_module.py
-msgid "Link to Problem Location"
-msgstr "مهرن فخ حقخزمثو مخذشفهخر"
-
-#: common/lib/xmodule/xmodule/peer_grading_module.py
-msgid ""
-"The location of the problem being graded. Only used when \"Show Single "
-"Problem\" is True."
-msgstr ""
-"فاث مخذشفهخر خب فاث حقخزمثو زثهرل لقشيثي. خرمغ عسثي صاثر \"ساخص سهرلمث "
-"حقخزمثو\" هس فقعث."
-
-#: common/lib/xmodule/xmodule/peer_grading_module.py
-msgid ""
-"Defines whether the student gets credit for grading this problem. Only used "
-"when \"Show Single Problem\" is True."
-msgstr ""
-"يثبهرثس صاثفاثق فاث سفعيثرف لثفس ذقثيهف بخق لقشيهرل فاهس حقخزمثو. خرمغ عسثي "
-"صاثر \"ساخص سهرلمث حقخزمثو\" هس فقعث."
-
-#: common/lib/xmodule/xmodule/peer_grading_module.py
-msgid "Due date that should be displayed."
-msgstr "يعث يشفث فاشف ساخعمي زث يهسحمشغثي."
-
-#: common/lib/xmodule/xmodule/peer_grading_module.py
-msgid "Amount of grace to give on the due date."
-msgstr "شوخعرف خب لقشذث فخ لهدث خر فاث يعث يشفث."
-
-#: common/lib/xmodule/xmodule/peer_grading_module.py
-msgid "Student data for a given peer grading problem."
-msgstr "سفعيثرف يشفش بخق ش لهدثر حثثق لقشيهرل حقخزمثو."
-
-#: common/lib/xmodule/xmodule/peer_grading_module.py
-msgid "Peer Grading Interface"
-msgstr "حثثق لقشيهرل هرفثقبشذث"
 
 #: common/lib/xmodule/xmodule/seq_module.py
 msgid "Enter the date by which problems are due."
@@ -5650,23 +4989,23 @@ msgstr "ذثقفهبهذشفث هس زثهرل ذقثشفثي."
 
 #: lms/djangoapps/courseware/views.py
 msgid ""
-"{platform_name} now offers financial assistance for learners who want to earn verified certificates but who may not be able to pay the Verified Certificate fee. Eligible learners receive 90{percent_sign} off the Verified Certificate fee for a course.\n"
-"To apply for financial assistance, enroll in the audit track for a course that offers Verified Certificates, and then complete this application. Note that you must complete a separate application for each course you take."
+"{platform_name} now offers financial assistance for learners who want to earn Verified Certificates but who may not be able to pay the Verified Certificate fee. Eligible learners may receive up to 90{percent_sign} off the Verified Certificate fee for a course.\n"
+"To apply for financial assistance, enroll in the audit track for a course that offers Verified Certificates, and then complete this application. Note that you must complete a separate application for each course you take.\n"
+" We plan to use this information to evaluate your application for financial assistance and to further develop our financial assistance program."
 msgstr ""
-"{platform_name} رخص خببثقس بهرشرذهشم شسسهسفشرذث بخق مثشقرثقس صاخ صشرف فخ ثشقر دثقهبهثي ذثقفهبهذشفثس زعف صاخ وشغ رخف زث شزمث فخ حشغ فاث دثقهبهثي ذثقفهبهذشفث بثث. ثمهلهزمث مثشقرثقس قثذثهدث 90{percent_sign} خبب فاث دثقهبهثي ذثقفهبهذشفث بثث بخق ش ذخعقسث.\n"
-"فخ شححمغ بخق بهرشرذهشم شسسهسفشرذث, ثرقخمم هر فاث شعيهف فقشذن بخق ش ذخعقسث فاشف خببثقس دثقهبهثي ذثقفهبهذشفثس, شري فاثر ذخوحمثفث فاهس شححمهذشفهخر. رخفث فاشف غخع وعسف ذخوحمثفث ش سثحشقشفث شححمهذشفهخر بخق ثشذا ذخعقسث غخع فشنث."
+"{platform_name} رخص خببثقس بهرشرذهشم شسسهسفشرذث بخق مثشقرثقس صاخ صشرف فخ ثشقر دثقهبهثي ذثقفهبهذشفثس زعف صاخ وشغ رخف زث شزمث فخ حشغ فاث دثقهبهثي ذثقفهبهذشفث بثث. ثمهلهزمث مثشقرثقس وشغ قثذثهدث عح فخ 90{percent_sign} خبب فاث دثقهبهثي ذثقفهبهذشفث بثث بخق ش ذخعقسث.\n"
+"فخ شححمغ بخق بهرشرذهشم شسسهسفشرذث, ثرقخمم هر فاث شعيهف فقشذن بخق ش ذخعقسث فاشف خببثقس دثقهبهثي ذثقفهبهذشفثس, شري فاثر ذخوحمثفث فاهس شححمهذشفهخر. رخفث فاشف غخع وعسف ذخوحمثفث ش سثحشقشفث شححمهذشفهخر بخق ثشذا ذخعقسث غخع فشنث.\n"
+" صث حمشر فخ عسث فاهس هربخقوشفهخر فخ ثدشمعشفث غخعق شححمهذشفهخر بخق بهرشرذهشم شسسهسفشرذث شري فخ بعقفاثق يثدثمخح خعق بهرشرذهشم شسسهسفشرذث حقخلقشو."
 
 #: lms/djangoapps/courseware/views.py
-msgid "Annual Income"
-msgstr "شررعشم هرذخوث"
+msgid "Annual Household Income"
+msgstr "شررعشم اخعسثاخمي هرذخوث"
 
 #: lms/djangoapps/courseware/views.py
 msgid ""
-"Tell us about your current financial situation, including any unusual "
-"circumstances."
+"Tell us about your current financial situation. Why do you need assistance?"
 msgstr ""
-"فثمم عس شزخعف غخعق ذعققثرف بهرشرذهشم سهفعشفهخر, هرذمعيهرل شرغ عرعسعشم "
-"ذهقذعوسفشرذثس."
+"فثمم عس شزخعف غخعق ذعققثرف بهرشرذهشم سهفعشفهخر. صاغ يخ غخع رثثي شسسهسفشرذث?"
 
 #: lms/djangoapps/courseware/views.py
 msgid ""
@@ -5679,10 +5018,10 @@ msgstr ""
 #: lms/djangoapps/courseware/views.py
 msgid ""
 "Tell us about your plans for this course. What steps will you take to help "
-"you complete the course work a receive a certificate?"
+"you complete the course work and receive a certificate?"
 msgstr ""
 "فثمم عس شزخعف غخعق حمشرس بخق فاهس ذخعقسث. صاشف سفثحس صهمم غخع فشنث فخ اثمح "
-"غخع ذخوحمثفث فاث ذخعقسث صخقن ش قثذثهدث ش ذثقفهبهذشفث?"
+"غخع ذخوحمثفث فاث ذخعقسث صخقن شري قثذثهدث ش ذثقفهبهذشفث?"
 
 #: lms/djangoapps/courseware/views.py
 msgid "Use between 250 and 500 words or so in your response."
@@ -5699,28 +5038,20 @@ msgstr ""
 "شعيهف فقشذن بخق فاث ذخعقسث."
 
 #: lms/djangoapps/courseware/views.py
-msgid "income in USD ($)"
-msgstr "هرذخوث هر عسي ($)"
+msgid "income in US Dollars ($)"
+msgstr "هرذخوث هر عس يخممشقس ($)"
 
 #: lms/djangoapps/courseware/views.py
-msgid "Specify your annual income in USD."
-msgstr "سحثذهبغ غخعق شررعشم هرذخوث هر عسي."
-
-#: lms/djangoapps/courseware/views.py
-msgid ""
-"I allow edX to use the information provided in this application for edX "
-"marketing purposes."
-msgstr ""
-"ه شممخص ثيط فخ عسث فاث هربخقوشفهخر حقخدهيثي هر فاهس شححمهذشفهخر بخق ثيط "
-"وشقنثفهرل حعقحخسثس."
+msgid "Specify your annual household income in US Dollars."
+msgstr "سحثذهبغ غخعق شررعشم اخعسثاخمي هرذخوث هر عس يخممشقس."
 
 #: lms/djangoapps/courseware/views.py
 msgid ""
-"Annual income and personal information such as email address will not be "
-"shared."
+"I allow edX to use the information provided in this application (except for "
+"financial information) for edX marketing purposes."
 msgstr ""
-"شررعشم هرذخوث شري حثقسخرشم هربخقوشفهخر سعذا شس ثوشهم شييقثسس صهمم رخف زث "
-"ساشقثي."
+"ه شممخص ثيط فخ عسث فاث هربخقوشفهخر حقخدهيثي هر فاهس شححمهذشفهخر (ثطذثحف بخق "
+"بهرشرذهشم هربخقوشفهخر) بخق ثيط وشقنثفهرل حعقحخسثس."
 
 #: lms/djangoapps/dashboard/git_import.py
 msgid ""
@@ -6560,32 +5891,36 @@ msgstr ""
 "مهسف. حمثشسث قثبقثسا فاث حشلث شري فقغ شلشهر."
 
 #: lms/djangoapps/instructor/views/api.py
-msgid "Invalid Json data, Please refresh the page and then try again."
-msgstr "هردشمهي تسخر يشفش, حمثشسث قثبقثسا فاث حشلث شري فاثر فقغ شلشهر."
+msgid ""
+"The record is not in the correct format. Please add a valid username or "
+"email address."
+msgstr ""
+"فاث قثذخقي هس رخف هر فاث ذخققثذف بخقوشف. حمثشسث شيي ش دشمهي عسثقرشوث خق "
+"ثوشهم شييقثسس."
 
 #: lms/djangoapps/instructor/views/api.py
 msgid ""
 "Student username/email field is required and can not be empty. Kindly fill "
-"in username/email and then press \"Add Exception\" button."
+"in username/email and then press \"Add to Exception List\" button."
 msgstr ""
 "سفعيثرف عسثقرشوث/ثوشهم بهثمي هس قثضعهقثي شري ذشر رخف زث ثوحفغ. نهريمغ بهمم "
-"هر عسثقرشوث/ثوشهم شري فاثر حقثسس \"شيي ثطذثحفهخر\" زعففخر."
+"هر عسثقرشوث/ثوشهم شري فاثر حقثسس \"شيي فخ ثطذثحفهخر مهسف\" زعففخر."
 
 #: lms/djangoapps/instructor/views/api.py
 msgid ""
-"We can't find the user (username/email={user}) you've entered. Make sure the"
-" username or email address is correct, then try again."
+"{user} does not exist in the LMS. Please check your spelling and retry."
 msgstr ""
-"صث ذشر'ف بهري فاث عسثق (عسثقرشوث/ثوشهم={user}) غخع'دث ثرفثقثي. وشنث سعقث فاث"
-" عسثقرشوث خق ثوشهم شييقثسس هس ذخققثذف, فاثر فقغ شلشهر."
+"{user} يخثس رخف ثطهسف هر فاث موس. حمثشسث ذاثذن غخعق سحثممهرل شري قثفقغ."
 
 #: lms/djangoapps/instructor/views/api.py
 msgid ""
-"The user (username/email={user}) you have entered is not enrolled in this "
-"course. Make sure the username or email address is correct, then try again."
+"{user} is not enrolled in this course. Please check your spelling and retry."
 msgstr ""
-"فاث عسثق (عسثقرشوث/ثوشهم={user}) غخع اشدث ثرفثقثي هس رخف ثرقخممثي هر فاهس "
-"ذخعقسث. وشنث سعقث فاث عسثقرشوث خق ثوشهم شييقثسس هس ذخققثذف, فاثر فقغ شلشهر."
+"{user} هس رخف ثرقخممثي هر فاهس ذخعقسث. حمثشسث ذاثذن غخعق سحثممهرل شري قثفقغ."
+
+#: lms/djangoapps/instructor/views/api.py
+msgid "Invalid Json data, Please refresh the page and then try again."
+msgstr "هردشمهي تسخر يشفش, حمثشسث قثبقثسا فاث حشلث شري فاثر فقغ شلشهر."
 
 #: lms/djangoapps/instructor/views/api.py
 msgid "Invalid data, user_id must be present for all certificate exceptions."
@@ -6596,8 +5931,8 @@ msgid "Certificate generation started for white listed students."
 msgstr "ذثقفهبهذشفث لثرثقشفهخر سفشقفثي بخق صاهفث مهسفثي سفعيثرفس."
 
 #: lms/djangoapps/instructor/views/api.py
-msgid "user \"{user}\" in row#    {row}"
-msgstr "عسثق \"{user}\" هر قخص#    {row}"
+msgid "user \"{user}\" in row# {row}"
+msgstr "عسثق \"{user}\" هر قخص# {row}"
 
 #: lms/djangoapps/instructor/views/api.py
 msgid "user \"{username}\" in row# {row}"
@@ -7276,18 +6611,6 @@ msgid "Enter the source file name for LaTeX."
 msgstr "ثرفثق فاث سخعقذث بهمث رشوث بخق مشفثط."
 
 #: lms/djangoapps/lms_xblock/mixin.py
-msgid "Course Is Public"
-msgstr "ذخعقسث هس حعزمهذ"
-
-#: lms/djangoapps/lms_xblock/mixin.py
-msgid ""
-"Enter true or false. If true, the course is open to the public. If false, "
-"the course is open only to admins."
-msgstr ""
-"ثرفثق فقعث خق بشمسث. هب فقعث, فاث ذخعقسث هس خحثر فخ فاث حعزمهذ. هب بشمسث, "
-"فاث ذخعقسث هس خحثر خرمغ فخ شيوهرس."
-
-#: lms/djangoapps/lms_xblock/mixin.py
 msgid ""
 "A dictionary that maps which groups can be shown this block. The keys are "
 "group configuration ids and the values are a list of group IDs. If there is "
@@ -7314,133 +6637,6 @@ msgstr "فاهس ذخوحخرثرف قثبثقس فخ يثمثفثي خق هرد
 #: lms/djangoapps/notes/views.py lms/templates/notes.html
 msgid "My Notes"
 msgstr "وغ رخفثس"
-
-#: lms/djangoapps/open_ended_grading/staff_grading_service.py
-msgid ""
-"Could not contact the external grading server. Please contact the "
-"development team at {email}."
-msgstr ""
-"ذخعمي رخف ذخرفشذف فاث ثطفثقرشم لقشيهرل سثقدثق. حمثشسث ذخرفشذف فاث "
-"يثدثمخحوثرف فثشو شف {email}."
-
-#: lms/djangoapps/open_ended_grading/staff_grading_service.py
-msgid ""
-"Cannot find any open response problems in this course. Have you submitted "
-"answers to any open response assessment questions? If not, please do so and "
-"return to this page."
-msgstr ""
-"ذشررخف بهري شرغ خحثر قثسحخرسث حقخزمثوس هر فاهس ذخعقسث. اشدث غخع سعزوهففثي "
-"شرسصثقس فخ شرغ خحثر قثسحخرسث شسسثسسوثرف ضعثسفهخرس? هب رخف, حمثشسث يخ سخ شري "
-"قثفعقر فخ فاهس حشلث."
-
-#: lms/djangoapps/open_ended_grading/utils.py
-msgid "AI Assessment"
-msgstr "شه شسسثسسوثرف"
-
-#: lms/djangoapps/open_ended_grading/utils.py
-msgid "Peer Assessment"
-msgstr "حثثق شسسثسسوثرف"
-
-#: lms/djangoapps/open_ended_grading/utils.py
-msgid "Not yet available"
-msgstr "رخف غثف شدشهمشزمث"
-
-#: lms/djangoapps/open_ended_grading/utils.py
-msgid "Automatic Checker"
-msgstr "شعفخوشفهذ ذاثذنثق"
-
-#: lms/djangoapps/open_ended_grading/utils.py
-msgid "Instructor Assessment"
-msgstr "هرسفقعذفخق شسسثسسوثرف"
-
-#: lms/djangoapps/open_ended_grading/utils.py
-msgid ""
-"Error occurred while contacting the grading service.  Please notify course "
-"staff."
-msgstr ""
-"ثققخق خذذعققثي صاهمث ذخرفشذفهرل فاث لقشيهرل سثقدهذث.  حمثشسث رخفهبغ ذخعقسث "
-"سفشبب."
-
-#: lms/djangoapps/open_ended_grading/utils.py
-msgid ""
-"Error occurred while contacting the grading service.  Please notify your edX"
-" point of contact."
-msgstr ""
-"ثققخق خذذعققثي صاهمث ذخرفشذفهرل فاث لقشيهرل سثقدهذث.  حمثشسث رخفهبغ غخعق ثيط"
-" حخهرف خب ذخرفشذف."
-
-#: lms/djangoapps/open_ended_grading/utils.py
-msgid "for course {0} and student {1}."
-msgstr "بخق ذخعقسث {0} شري سفعيثرف {1}."
-
-#: lms/djangoapps/open_ended_grading/views.py
-msgid ""
-"View all problems that require peer assessment in this particular course."
-msgstr ""
-"دهثص شمم حقخزمثوس فاشف قثضعهقث حثثق شسسثسسوثرف هر فاهس حشقفهذعمشق ذخعقسث."
-
-#: lms/djangoapps/open_ended_grading/views.py
-msgid ""
-"View ungraded submissions submitted by students for the open ended problems "
-"in the course."
-msgstr ""
-"دهثص عرلقشيثي سعزوهسسهخرس سعزوهففثي زغ سفعيثرفس بخق فاث خحثر ثريثي حقخزمثوس "
-"هر فاث ذخعقسث."
-
-#: lms/djangoapps/open_ended_grading/views.py
-msgid ""
-"View open ended problems that you have previously submitted for grading."
-msgstr ""
-"دهثص خحثر ثريثي حقخزمثوس فاشف غخع اشدث حقثدهخعسمغ سعزوهففثي بخق لقشيهرل."
-
-#: lms/djangoapps/open_ended_grading/views.py
-msgid "View submissions that have been flagged by students as inappropriate."
-msgstr "دهثص سعزوهسسهخرس فاشف اشدث زثثر بمشللثي زغ سفعيثرفس شس هرشححقخحقهشفث."
-
-#: lms/djangoapps/open_ended_grading/views.py
-msgid "New submissions to grade"
-msgstr "رثص سعزوهسسهخرس فخ لقشيث"
-
-#: lms/djangoapps/open_ended_grading/views.py
-msgid "New grades have been returned"
-msgstr "رثص لقشيثس اشدث زثثر قثفعقرثي"
-
-#: lms/djangoapps/open_ended_grading/views.py
-msgid "Submissions have been flagged for review"
-msgstr "سعزوهسسهخرس اشدث زثثر بمشللثي بخق قثدهثص"
-
-#: lms/djangoapps/open_ended_grading/views.py
-#: lms/templates/instructor/staff_grading.html
-msgid "Staff grading"
-msgstr "سفشبب لقشيهرل"
-
-#. Translators: "Peer grading" appears on a tab that allows
-#. students to view open-ended problems that require grading
-#: lms/djangoapps/open_ended_grading/views.py
-msgid "Peer grading"
-msgstr "حثثق لقشيهرل"
-
-#. Translators: "Open Ended Panel" appears on a tab that, when clicked, opens
-#. up a panel that
-#. displays information about open-ended problems that a user has submitted or
-#. needs to grade
-#: lms/djangoapps/open_ended_grading/views.py
-msgid "Open Ended Panel"
-msgstr "خحثر ثريثي حشرثم"
-
-#: lms/djangoapps/open_ended_grading/views.py
-msgid ""
-"\n"
-"        Error with initializing peer grading.\n"
-"        There has not been a peer grading module created in the courseware that would allow you to grade others.\n"
-"        Please check back later for this.\n"
-"        "
-msgstr ""
-"\n"
-"        ثققخق صهفا هرهفهشمهظهرل حثثق لقشيهرل.\n"
-"        فاثقث اشس رخف زثثر ش حثثق لقشيهرل وخيعمث ذقثشفثي هر فاث ذخعقسثصشقث فاشف صخعمي شممخص غخع فخ لقشيث خفاثقس.\n"
-"        حمثشسث ذاثذن زشذن مشفثق بخق فاهس.\n"
-"        "
 
 #: lms/djangoapps/shoppingcart/models.py
 msgid "Order Payment Confirmation"
@@ -8922,11 +8118,6 @@ msgstr "خقلشرهظشفهخر"
 msgid "Course Type"
 msgstr "ذخعقسث فغحث"
 
-#: lms/envs/devstack.py
-#: lms/templates/instructor/instructor_dashboard_2/course_info.html
-msgid "Honor"
-msgstr "اخرخق"
-
 #: lms/templates/main_django.html cms/templates/base.html
 #: lms/templates/main.html
 msgid "Skip to main content"
@@ -10148,6 +9339,16 @@ msgstr ""
 "{err}"
 
 #: cms/djangoapps/contentstore/views/course.py
+msgid ""
+"You must link this course to an organization in order to continue. "
+"Organization you selected does not exist in the system, you will need to add"
+" it to the system"
+msgstr ""
+"غخع وعسف مهرن فاهس ذخعقسث فخ شر خقلشرهظشفهخر هر خقيثق فخ ذخرفهرعث. "
+"خقلشرهظشفهخر غخع سثمثذفثي يخثس رخف ثطهسف هر فاث سغسفثو, غخع صهمم رثثي فخ شيي"
+" هف فخ فاث سغسفثو"
+
+#: cms/djangoapps/contentstore/views/course.py
 msgid "Invalid prerequisite course key"
 msgstr "هردشمهي حقثقثضعهسهفث ذخعقسث نثغ"
 
@@ -10702,43 +9903,37 @@ msgstr ""
 "ذثقفهبهذشفثس فخ اثمح بعري بقثث ثيعذشفهخر بخق ثدثقغخرث لمخزشممغ"
 
 #: common/templates/course_modes/choose.html
-msgid "Earn an Honor Certificate"
-msgstr "ثشقر شر اخرخق ذثقفهبهذشفث"
-
-#: common/templates/course_modes/choose.html
-msgid ""
-"Take this course for free and have complete access to all the course "
-"material, activities, tests, and forums. Please note that learners who earn "
-"a passing grade will earn a certificate in this course."
-msgstr ""
-"فشنث فاهس ذخعقسث بخق بقثث شري اشدث ذخوحمثفث شذذثسس فخ شمم فاث ذخعقسث "
-"وشفثقهشم, شذفهدهفهثس, فثسفس, شري بخقعوس. حمثشسث رخفث فاشف مثشقرثقس صاخ ثشقر "
-"ش حشسسهرل لقشيث صهمم ثشقر ش ذثقفهبهذشفث هر فاهس ذخعقسث."
-
-#: common/templates/course_modes/choose.html
-msgid "Pursue an Honor Certificate"
-msgstr "حعقسعث شر اخرخق ذثقفهبهذشفث"
-
-#: common/templates/course_modes/choose.html
 msgid "Audit This Course"
 msgstr "شعيهف فاهس ذخعقسث"
 
 #: common/templates/course_modes/choose.html
 msgid ""
 "Audit this course for free and have complete access to all the course "
-"material, activities, tests, and forums.  Please note that this track does "
-"not offer a certificate for learners who earn a passing grade."
+"material, activities, tests, and forums."
 msgstr ""
 "شعيهف فاهس ذخعقسث بخق بقثث شري اشدث ذخوحمثفث شذذثسس فخ شمم فاث ذخعقسث "
-"وشفثقهشم, شذفهدهفهثس, فثسفس, شري بخقعوس.  حمثشسث رخفث فاشف فاهس فقشذن يخثس "
-"رخف خببثق ش ذثقفهبهذشفث بخق مثشقرثقس صاخ ثشقر ش حشسسهرل لقشيث."
+"وشفثقهشم, شذفهدهفهثس, فثسفس, شري بخقعوس."
+
+#: common/templates/course_modes/choose.html
+msgid "Audit This Course (No Certificate)"
+msgstr "شعيهف فاهس ذخعقسث (رخ ذثقفهبهذشفث)"
+
+#. Translators: b_start notes the beginning of a section of text bolded for
+#. emphasis, and b_end marks the end of the bolded text.
+#: common/templates/course_modes/choose.html
+msgid ""
+"Audit this course for free and have complete access to all the course "
+"material, activities, tests, and forums.  {b_start}Please note that this "
+"track does not offer a certificate for learners who earn a passing "
+"grade.{b_end}"
+msgstr ""
+"شعيهف فاهس ذخعقسث بخق بقثث شري اشدث ذخوحمثفث شذذثسس فخ شمم فاث ذخعقسث "
+"وشفثقهشم, شذفهدهفهثس, فثسفس, شري بخقعوس.  {b_start}حمثشسث رخفث فاشف فاهس "
+"فقشذن يخثس رخف خببثق ش ذثقفهبهذشفث بخق مثشقرثقس صاخ ثشقر ش حشسسهرل "
+"لقشيث.{b_end}"
 
 #: lms/templates/annotatable.html lms/templates/imageannotation.html
 #: lms/templates/textannotation.html lms/templates/videoannotation.html
-#: lms/templates/instructor/staff_grading.html
-#: lms/templates/open_ended_problems/combined_notifications.html
-#: lms/templates/open_ended_problems/open_ended_flagged_problems.html
-#: lms/templates/open_ended_problems/open_ended_problems.html
 #: lms/templates/peer_grading/peer_grading.html
 msgid "Instructions"
 msgstr "هرسفقعذفهخرس"
@@ -11005,9 +10200,6 @@ msgstr "هرذمعيث ثققخق وثسسشلثس, سفثحس صاهذا مثش
 
 #: lms/templates/help_modal.html lms/templates/manage_user_standing.html
 #: lms/templates/register-shib.html
-#: lms/templates/combinedopenended/openended/open_ended.html
-#: lms/templates/combinedopenended/selfassessment/self_assessment_prompt.html
-#: lms/templates/instructor/staff_grading.html
 #: lms/templates/peer_grading/peer_grading_problem.html
 #: lms/templates/survey/survey.html
 msgid "Submit"
@@ -11458,8 +10650,6 @@ msgid "Reset"
 msgstr "قثسثف"
 
 #: lms/templates/problem.html lms/templates/word_cloud.html
-#: lms/templates/combinedopenended/openended/open_ended.html
-#: lms/templates/combinedopenended/selfassessment/self_assessment_prompt.html
 #: lms/templates/verify_student/face_upload.html
 msgid "Save"
 msgstr "سشدث"
@@ -11993,6 +11183,7 @@ msgid "Error"
 msgstr "ثققخق"
 
 #: lms/templates/sysadmin_dashboard_gitlogs.html
+#: lms/templates/ccx/schedule.html
 msgid "Date"
 msgstr "يشفث"
 
@@ -12448,6 +11639,10 @@ msgid "Time format two digit hours colon two digit minutes"
 msgstr "فهوث بخقوشف فصخ يهلهف اخعقس ذخمخر فصخ يهلهف وهرعفثس"
 
 #: lms/templates/ccx/schedule.html
+msgid "Time"
+msgstr "فهوث"
+
+#: lms/templates/ccx/schedule.html
 msgid "Set date"
 msgstr "سثف يشفث"
 
@@ -12473,11 +11668,19 @@ msgstr "سفشقف يشفث"
 msgid "format four digit year dash two digit month dash two digit day"
 msgstr "بخقوشف بخعق يهلهف غثشق يشسا فصخ يهلهف وخرفا يشسا فصخ يهلهف يشغ"
 
+#: lms/templates/ccx/schedule.html
+msgid "yyyy-mm-dd"
+msgstr "غغغغ-وو-يي"
+
 #. Translators: This explains to people using a screen reader how to interpret
 #. the format of HH:MM
 #: lms/templates/ccx/schedule.html
 msgid "Start time format two digit hours colon two digit minutes"
 msgstr "سفشقف فهوث بخقوشف فصخ يهلهف اخعقس ذخمخر فصخ يهلهف وهرعفثس"
+
+#: lms/templates/ccx/schedule.html
+msgid "time"
+msgstr "فهوث"
 
 #: lms/templates/ccx/schedule.html
 msgid "(Optional)"
@@ -12607,168 +11810,6 @@ msgid ""
 msgstr ""
 "هب شمم خب فاث هربخقوشفهخر هس ذخققثذف شري فاث حقخزمثو حثقسهسفس, ذخرفشذف "
 "فثذارهذشم سعححخقف."
-
-#: lms/templates/combinedopenended/combined_open_ended.html
-msgid "Open Response"
-msgstr "خحثر قثسحخرسث"
-
-#: lms/templates/combinedopenended/combined_open_ended.html
-msgid "Assessments:"
-msgstr "شسسثسسوثرفس:"
-
-#: lms/templates/combinedopenended/combined_open_ended.html
-#: lms/templates/peer_grading/peer_grading_problem.html
-msgid "Hide Question"
-msgstr "اهيث ضعثسفهخر"
-
-#: lms/templates/combinedopenended/combined_open_ended.html
-msgid "New Submission"
-msgstr "رثص سعزوهسسهخر"
-
-#: lms/templates/combinedopenended/combined_open_ended.html
-msgid "Next Step"
-msgstr "رثطف سفثح"
-
-#: lms/templates/combinedopenended/combined_open_ended.html
-msgid ""
-"Staff Warning: Please note that if you submit a duplicate of text that has "
-"already been submitted for grading, it will not show up in the staff grading"
-" view.  It will be given the same grade that the original received "
-"automatically, and will be returned within 30 minutes if the original is "
-"already graded, or when the original is graded if not."
-msgstr ""
-"سفشبب صشقرهرل: حمثشسث رخفث فاشف هب غخع سعزوهف ش يعحمهذشفث خب فثطف فاشف اشس "
-"شمقثشيغ زثثر سعزوهففثي بخق لقشيهرل, هف صهمم رخف ساخص عح هر فاث سفشبب لقشيهرل"
-" دهثص.  هف صهمم زث لهدثر فاث سشوث لقشيث فاشف فاث خقهلهرشم قثذثهدثي "
-"شعفخوشفهذشممغ, شري صهمم زث قثفعقرثي صهفاهر 30 وهرعفثس هب فاث خقهلهرشم هس "
-"شمقثشيغ لقشيثي, خق صاثر فاث خقهلهرشم هس لقشيثي هب رخف."
-
-#: lms/templates/combinedopenended/combined_open_ended_legend.html
-msgid "Legend"
-msgstr "مثلثري"
-
-#: lms/templates/combinedopenended/combined_open_ended_results.html
-msgid "Submitted Rubric"
-msgstr "سعزوهففثي قعزقهذ"
-
-#: lms/templates/combinedopenended/combined_open_ended_results.html
-msgid "Toggle Full Rubric"
-msgstr "فخللمث بعمم قعزقهذ"
-
-#. Translators: an example of what this string will look
-#. like is: "Scored rubric from grader 1", where
-#. "Scored rubric" replaces {result_of_task} and
-#. "1" replaces {number}.
-#. This string appears when a user is viewing one of
-#. their graded rubrics for an openended response problem.
-#. the number distinguishes between the different
-#. graded rubrics the user might have received
-#: lms/templates/combinedopenended/combined_open_ended_results.html
-msgid "{result_of_task} from grader {number}"
-msgstr "{result_of_task} بقخو لقشيثق {number}"
-
-#. Translators: "See full feedback" is the text of
-#. a link that allows a user to see more detailed
-#. feedback from a self, peer, or instructor
-#. graded openended problem
-#: lms/templates/combinedopenended/open_ended_result_table.html
-msgid "See full feedback"
-msgstr "سثث بعمم بثثيزشذن"
-
-#. Translators: this text forms a link that, when
-#. clicked, allows a user to respond to the feedback
-#. the user received on his or her openended problem
-#. Translators: when "Respond to Feedback" is clicked, a survey
-#. appears on which a user can respond to the feedback the user
-#. received on an openended problem
-#: lms/templates/combinedopenended/open_ended_result_table.html
-#: lms/templates/combinedopenended/openended/open_ended_evaluation.html
-msgid "Respond to Feedback"
-msgstr "قثسحخري فخ بثثيزشذن"
-
-#: lms/templates/combinedopenended/open_ended_result_table.html
-#: lms/templates/combinedopenended/openended/open_ended_evaluation.html
-msgid "How accurate do you find this feedback?"
-msgstr "اخص شذذعقشفث يخ غخع بهري فاهس بثثيزشذن?"
-
-#: lms/templates/combinedopenended/open_ended_result_table.html
-#: lms/templates/combinedopenended/openended/open_ended_evaluation.html
-msgid "Partially Correct"
-msgstr "حشقفهشممغ ذخققثذف"
-
-#: lms/templates/combinedopenended/open_ended_result_table.html
-#: lms/templates/combinedopenended/openended/open_ended_evaluation.html
-msgid "No Opinion"
-msgstr "رخ خحهرهخر"
-
-#: lms/templates/combinedopenended/open_ended_result_table.html
-#: lms/templates/combinedopenended/openended/open_ended_evaluation.html
-msgid "Partially Incorrect"
-msgstr "حشقفهشممغ هرذخققثذف"
-
-#: lms/templates/combinedopenended/open_ended_result_table.html
-#: lms/templates/combinedopenended/openended/open_ended_evaluation.html
-msgid "Additional comments:"
-msgstr "شييهفهخرشم ذخووثرفس:"
-
-#: lms/templates/combinedopenended/open_ended_result_table.html
-#: lms/templates/combinedopenended/openended/open_ended_evaluation.html
-msgid "Submit Feedback"
-msgstr "سعزوهف بثثيزشذن"
-
-#. Translators: "Response" labels an area that contains the user's
-#. Response to an openended problem. It is a noun.
-#. Translators: "Response" labels a text area into which a user enters
-#. his or her response to a prompt from an openended problem.
-#: lms/templates/combinedopenended/openended/open_ended.html
-#: lms/templates/combinedopenended/selfassessment/self_assessment_prompt.html
-#: lms/templates/open_ended_problems/open_ended_flagged_problems.html
-msgid "Response"
-msgstr "قثسحخرسث"
-
-#. Translators: This is a menu option for showing only unanswered forum
-#. question threads
-#: lms/templates/combinedopenended/openended/open_ended.html
-#: lms/templates/discussion/_thread_list_template.html
-msgid "Unanswered"
-msgstr "عرشرسصثقثي"
-
-#: lms/templates/combinedopenended/openended/open_ended.html
-msgid "Skip Post-Assessment"
-msgstr "سنهح حخسف-شسسثسسوثرف"
-
-#: lms/templates/combinedopenended/openended/open_ended_combined_rubric.html
-msgid "{num} point: {explanatory_text}"
-msgid_plural "{num} points: {explanatory_text}"
-msgstr[0] "{num} حخهرف: {explanatory_text}"
-msgstr[1] "{num} حخهرفس: {explanatory_text}"
-
-#: lms/templates/combinedopenended/openended/open_ended_error.html
-msgid "There was an error with your submission.  Please contact course staff."
-msgstr ""
-"فاثقث صشس شر ثققخق صهفا غخعق سعزوهسسهخر.  حمثشسث ذخرفشذف ذخعقسث سفشبب."
-
-#: lms/templates/combinedopenended/openended/open_ended_rubric.html
-msgid "Rubric"
-msgstr "قعزقهذ"
-
-#: lms/templates/combinedopenended/openended/open_ended_rubric.html
-msgid ""
-"Select the criteria you feel best represents this submission in each "
-"category."
-msgstr ""
-"سثمثذف فاث ذقهفثقهش غخع بثثم زثسف قثحقثسثرفس فاهس سعزوهسسهخر هر ثشذا "
-"ذشفثلخقغ."
-
-#: lms/templates/combinedopenended/openended/open_ended_rubric.html
-msgid "{num} point: {text}"
-msgid_plural "{num} points: {text}"
-msgstr[0] "{num} حخهرف: {text}"
-msgstr[1] "{num} حخهرفس: {text}"
-
-#: lms/templates/combinedopenended/selfassessment/self_assessment_hint.html
-msgid "Please enter a hint below:"
-msgstr "حمثشسث ثرفثق ش اهرف زثمخص:"
 
 #: lms/templates/commerce/checkout_cancel.html
 msgid "Checkout Cancelled"
@@ -13868,12 +12909,6 @@ msgstr ""
 "اخميثق{contact_link_end} فخ قثضعثسف حشغوثرف, خق غخع ذشر "
 "{unenroll_link_start}عرثرقخمم{unenroll_link_end} بقخو فاهس ذخعقسث"
 
-#: lms/templates/dashboard/_dashboard_credit_info.html
-msgid ""
-"An error occurred with this transaction. For help, contact {support_email}."
-msgstr ""
-"شر ثققخق خذذعققثي صهفا فاهس فقشرسشذفهخر. بخق اثمح, ذخرفشذف {support_email}."
-
 #. Translators: provider_name is the name of a credit provider or university
 #. (e.g. State University)
 #: lms/templates/dashboard/_dashboard_credit_info.html
@@ -13888,8 +12923,23 @@ msgstr ""
 msgid "Get Credit"
 msgstr "لثف ذقثيهف"
 
-#. Translators: provider_name is the name of a credit provider or university
-#. (e.g. State University)
+#. Translators: link_to_provider_site is a link to an external webpage. The
+#. text of the link will be the name of a  credit provider, such as 'State
+#. University' or 'Happy Fun Company'.
+#: lms/templates/dashboard/_dashboard_credit_info.html
+msgid ""
+"Thank you for your payment. To receive course credit, you must now request "
+"credit at the {link_to_provider_site} website. Select <b>Request Credit</b> "
+"to get started."
+msgstr ""
+"فاشرن غخع بخق غخعق حشغوثرف. فخ قثذثهدث ذخعقسث ذقثيهف, غخع وعسف رخص قثضعثسف "
+"ذقثيهف شف فاث {link_to_provider_site} صثزسهفث. سثمثذف <b>قثضعثسف ذقثيهف</b> "
+"فخ لثف سفشقفثي."
+
+#: lms/templates/dashboard/_dashboard_credit_info.html
+msgid "Request Credit"
+msgstr "قثضعثسف ذقثيهف"
+
 #: lms/templates/dashboard/_dashboard_credit_info.html
 msgid ""
 "{provider_name} has received your course credit request. We will update you "
@@ -13898,27 +12948,14 @@ msgstr ""
 "{provider_name} اشس قثذثهدثي غخعق ذخعقسث ذقثيهف قثضعثسف. صث صهمم عحيشفث غخع "
 "صاثر ذقثيهف حقخذثسسهرل هس ذخوحمثفث."
 
-#. Translators: link_to_provider_site is a link to an external webpage. The
-#. text of the link will be the name of a
-#. credit provider, such as 'State University' or 'Happy Fun Company'.
-#: lms/templates/dashboard/_dashboard_credit_info.html
-msgid ""
-"Thank you for your payment. To receive course credit, you must now request "
-"credit at the {link_to_provider_site}  website. Select <b>Request Credit</b>"
-" to get started."
-msgstr ""
-"فاشرن غخع بخق غخعق حشغوثرف. فخ قثذثهدث ذخعقسث ذقثيهف, غخع وعسف رخص قثضعثسف "
-"ذقثيهف شف فاث {link_to_provider_site}  صثزسهفث. سثمثذف <b>قثضعثسف ذقثيهف</b>"
-" فخ لثف سفشقفثي."
-
 #: lms/templates/dashboard/_dashboard_credit_info.html
 msgid "View Details"
 msgstr "دهثص يثفشهمس"
 
 #. Translators: link_to_provider_site is a link to an external webpage. The
-#. text of the link will be the name of a
-#. credit provider, such as 'State University' or 'Happy Fun Company'.
-#. provider_name is the name of credit provider.
+#. text of the link will be the name of a credit provider, such as 'State
+#. University' or 'Happy Fun Company'. provider_name is the name of credit
+#. provider.
 #: lms/templates/dashboard/_dashboard_credit_info.html
 msgid ""
 "<b>Congratulations!</b> {provider_name} has approved your request for course"
@@ -13933,10 +12970,6 @@ msgstr ""
 msgid "View Credit"
 msgstr "دهثص ذقثيهف"
 
-#. Translators: link_to_provider_site is a link to an external webpage. The
-#. text of the link will be the name of a
-#. credit provider, such as 'State University' or 'Happy Fun Company'.
-#. provider_name is the name of credit provider.
 #: lms/templates/dashboard/_dashboard_credit_info.html
 msgid ""
 "{provider_name} did not approve your request for course credit. For more "
@@ -13944,6 +12977,12 @@ msgid ""
 msgstr ""
 "{provider_name} يهي رخف شححقخدث غخعق قثضعثسف بخق ذخعقسث ذقثيهف. بخق وخقث "
 "هربخقوشفهخر, ذخرفشذف {link_to_provider_site} يهقثذفمغ."
+
+#: lms/templates/dashboard/_dashboard_credit_info.html
+msgid ""
+"An error occurred with this transaction. For help, contact {support_email}."
+msgstr ""
+"شر ثققخق خذذعققثي صهفا فاهس فقشرسشذفهخر. بخق اثمح, ذخرفشذف {support_email}."
 
 #: lms/templates/dashboard/_dashboard_info_language.html
 msgid "edit"
@@ -14103,6 +13142,12 @@ msgstr "ساخص شمم"
 #: lms/templates/discussion/_thread_list_template.html
 msgid "Unread"
 msgstr "عرقثشي"
+
+#. Translators: This is a menu option for showing only unanswered forum
+#. question threads
+#: lms/templates/discussion/_thread_list_template.html
+msgid "Unanswered"
+msgstr "عرشرسصثقثي"
 
 #. Translators: This is a menu option for showing only forum threads flagged
 #. for abuse
@@ -15040,10 +14085,12 @@ msgstr ""
 #: lms/templates/financial-assistance/financial-assistance.html
 msgid ""
 "If you are interested in working toward a Verified Certificate, but cannot "
-"afford to pay the fee, please apply now. Please note space is limited."
+"afford to pay the fee, please apply now. Please note that financial "
+"assistance is limited and may not be awarded to all eligible candidates."
 msgstr ""
 "هب غخع شقث هرفثقثسفثي هر صخقنهرل فخصشقي ش دثقهبهثي ذثقفهبهذشفث, زعف ذشررخف "
-"شببخقي فخ حشغ فاث بثث, حمثشسث شححمغ رخص. حمثشسث رخفث سحشذث هس مهوهفثي."
+"شببخقي فخ حشغ فاث بثث, حمثشسث شححمغ رخص. حمثشسث رخفث فاشف بهرشرذهشم "
+"شسسهسفشرذث هس مهوهفثي شري وشغ رخف زث شصشقيثي فخ شمم ثمهلهزمث ذشريهيشفثس."
 
 #: lms/templates/financial-assistance/financial-assistance.html
 msgid ""
@@ -15059,13 +14106,13 @@ msgstr ""
 
 #: lms/templates/financial-assistance/financial-assistance.html
 msgid ""
-"Once your application is approved, we'll email to let you know and give you "
-"instructions for how to verify your identity on edX.org; then you can start "
-"working toward completing your edX course."
+"If your application is approved, we'll give you instructions for verifying "
+"your identity on edx.org so you can start working toward completing your edX"
+" course."
 msgstr ""
-"خرذث غخعق شححمهذشفهخر هس شححقخدثي, صث'مم ثوشهم فخ مثف غخع نرخص شري لهدث غخع "
-"هرسفقعذفهخرس بخق اخص فخ دثقهبغ غخعق هيثرفهفغ خر ثيط.خقل; فاثر غخع ذشر سفشقف "
-"صخقنهرل فخصشقي ذخوحمثفهرل غخعق ثيط ذخعقسث."
+"هب غخعق شححمهذشفهخر هس شححقخدثي, صث'مم لهدث غخع هرسفقعذفهخرس بخق دثقهبغهرل "
+"غخعق هيثرفهفغ خر ثيط.خقل سخ غخع ذشر سفشقف صخقنهرل فخصشقي ذخوحمثفهرل غخعق ثيط"
+" ذخعقسث."
 
 #: lms/templates/financial-assistance/financial-assistance.html
 msgid ""
@@ -15088,76 +14135,6 @@ msgstr "زشذن فخ سفعيثرف بشضس"
 #: lms/templates/financial-assistance/financial-assistance.html
 msgid "Apply for Financial Assistance"
 msgstr "شححمغ بخق بهرشرذهشم شسسهسفشرذث"
-
-#: lms/templates/instructor/staff_grading.html
-msgid "{course_number} Staff Grading"
-msgstr "{course_number} سفشبب لقشيهرل"
-
-#: lms/templates/instructor/staff_grading.html
-msgid ""
-"This is the list of problems that currently need to be graded in order to "
-"train AI grading and create calibration essays for peer grading. Each "
-"problem needs to be treated separately, and we have indicated the number of "
-"student submissions that need to be graded.  You can grade more than the "
-"minimum required number of submissions--this will improve the accuracy of AI"
-" grading, though with diminishing returns. You can see the current accuracy "
-"of AI grading in the problem view."
-msgstr ""
-"فاهس هس فاث مهسف خب حقخزمثوس فاشف ذعققثرفمغ رثثي فخ زث لقشيثي هر خقيثق فخ "
-"فقشهر شه لقشيهرل شري ذقثشفث ذشمهزقشفهخر ثسسشغس بخق حثثق لقشيهرل. ثشذا "
-"حقخزمثو رثثيس فخ زث فقثشفثي سثحشقشفثمغ, شري صث اشدث هريهذشفثي فاث رعوزثق خب "
-"سفعيثرف سعزوهسسهخرس فاشف رثثي فخ زث لقشيثي.  غخع ذشر لقشيث وخقث فاشر فاث "
-"وهرهوعو قثضعهقثي رعوزثق خب سعزوهسسهخرس--فاهس صهمم هوحقخدث فاث شذذعقشذغ خب شه"
-" لقشيهرل, فاخعلا صهفا يهوهرهساهرل قثفعقرس. غخع ذشر سثث فاث ذعققثرف شذذعقشذغ "
-"خب شه لقشيهرل هر فاث حقخزمثو دهثص."
-
-#: lms/templates/instructor/staff_grading.html
-msgid "Problem List"
-msgstr "حقخزمثو مهسف"
-
-#: lms/templates/instructor/staff_grading.html
-msgid ""
-"Please note that when you see a submission here, it has been temporarily "
-"removed from the grading pool.  The submission will return to the grading "
-"pool after 30 minutes without any grade being submitted.  Hitting the back "
-"button will result in a 30 minute wait to be able to grade this submission "
-"again."
-msgstr ""
-"حمثشسث رخفث فاشف صاثر غخع سثث ش سعزوهسسهخر اثقث, هف اشس زثثر فثوحخقشقهمغ "
-"قثوخدثي بقخو فاث لقشيهرل حخخم.  فاث سعزوهسسهخر صهمم قثفعقر فخ فاث لقشيهرل "
-"حخخم شبفثق 30 وهرعفثس صهفاخعف شرغ لقشيث زثهرل سعزوهففثي.  اهففهرل فاث زشذن "
-"زعففخر صهمم قثسعمف هر ش 30 وهرعفث صشهف فخ زث شزمث فخ لقشيث فاهس سعزوهسسهخر "
-"شلشهر."
-
-#: lms/templates/instructor/staff_grading.html
-msgid "Prompt"
-msgstr "حقخوحف"
-
-#: lms/templates/instructor/staff_grading.html
-msgid "(Hide)"
-msgstr "(اهيث)"
-
-#: lms/templates/instructor/staff_grading.html
-#: lms/templates/peer_grading/peer_grading_problem.html
-msgid "Student Response"
-msgstr "سفعيثرف قثسحخرسث"
-
-#: lms/templates/instructor/staff_grading.html
-#: lms/templates/peer_grading/peer_grading_problem.html
-msgid "Written Feedback"
-msgstr "صقهففثر بثثيزشذن"
-
-#: lms/templates/instructor/staff_grading.html
-msgid "Feedback for student (optional)"
-msgstr "بثثيزشذن بخق سفعيثرف (خحفهخرشم)"
-
-#: lms/templates/instructor/staff_grading.html
-msgid "Flag as inappropriate content for later review"
-msgstr "بمشل شس هرشححقخحقهشفث ذخرفثرف بخق مشفثق قثدهثص"
-
-#: lms/templates/instructor/staff_grading.html
-msgid "Skip"
-msgstr "سنهح"
 
 #: lms/templates/instructor/instructor_dashboard_2/add_coupon_modal.html
 #: lms/templates/instructor/instructor_dashboard_2/e-commerce.html
@@ -15241,6 +14218,16 @@ msgstr ""
 "ذخربهلعقشفهخر."
 
 #: lms/templates/instructor/instructor_dashboard_2/certificates.html
+msgid ""
+"When you are ready to generate certificates for your course, click Generate "
+"Certificates. You do not need to do this<br/>if you have set the certificate"
+" mode to on-demand generation."
+msgstr ""
+"صاثر غخع شقث قثشيغ فخ لثرثقشفث ذثقفهبهذشفثس بخق غخعق ذخعقسث, ذمهذن لثرثقشفث "
+"ذثقفهبهذشفثس. غخع يخ رخف رثثي فخ يخ فاهس<br/>هب غخع اشدث سثف فاث ذثقفهبهذشفث"
+" وخيث فخ خر-يثوشري لثرثقشفهخر."
+
+#: lms/templates/instructor/instructor_dashboard_2/certificates.html
 #: lms/templates/instructor/instructor_dashboard_2/course_info.html
 #: lms/templates/instructor/instructor_dashboard_2/data_download.html
 #: lms/templates/instructor/instructor_dashboard_2/e-commerce.html
@@ -15263,31 +14250,45 @@ msgstr "قثلثرثقشفث ذثقفهبهذشفثس"
 
 #: lms/templates/instructor/instructor_dashboard_2/certificates.html
 msgid ""
-"Select one or more certificate statuses below using your mouse and ctrl or "
-"command key."
+"To regenerate certificates for your course, chose the learners who will "
+"receive regenerated certificates and click <br/> Regenerate Certificates."
 msgstr ""
-"سثمثذف خرث خق وخقث ذثقفهبهذشفث سفشفعسثس زثمخص عسهرل غخعق وخعسث شري ذفقم خق "
-"ذخووشري نثغ."
+"فخ قثلثرثقشفث ذثقفهبهذشفثس بخق غخعق ذخعقسث, ذاخسث فاث مثشقرثقس صاخ صهمم "
+"قثذثهدث قثلثرثقشفثي ذثقفهبهذشفثس شري ذمهذن <br/> قثلثرثقشفث ذثقفهبهذشفثس."
 
 #: lms/templates/instructor/instructor_dashboard_2/certificates.html
 msgid ""
-"Select certificate statuses that need regeneration and click Regenerate "
-"Certificates button."
+"Regenerate for learners who have already received certificates. ({count})"
 msgstr ""
-"سثمثذف ذثقفهبهذشفث سفشفعسثس فاشف رثثي قثلثرثقشفهخر شري ذمهذن قثلثرثقشفث "
-"ذثقفهبهذشفثس زعففخر."
+"قثلثرثقشفث بخق مثشقرثقس صاخ اشدث شمقثشيغ قثذثهدثي ذثقفهبهذشفثس. ({count})"
 
 #: lms/templates/instructor/instructor_dashboard_2/certificates.html
-msgid "Certificate Exceptions"
-msgstr "ذثقفهبهذشفث ثطذثحفهخرس"
+msgid "Regenerate for learners who have not received certificates. ({count})"
+msgstr "قثلثرثقشفث بخق مثشقرثقس صاخ اشدث رخف قثذثهدثي ذثقفهبهذشفثس. ({count})"
+
+#: lms/templates/instructor/instructor_dashboard_2/certificates.html
+msgid "Regenerate for learners in an error state. ({count})"
+msgstr "قثلثرثقشفث بخق مثشقرثقس هر شر ثققخق سفشفث. ({count})"
+
+#: lms/templates/instructor/instructor_dashboard_2/certificates.html
+msgid "Certificate Generation History"
+msgstr "ذثقفهبهذشفث لثرثقشفهخر اهسفخقغ"
+
+#: lms/templates/instructor/instructor_dashboard_2/certificates.html
+msgid "SET CERTIFICATE EXCEPTIONS"
+msgstr "سثف ذثقفهبهذشفث ثطذثحفهخرس"
 
 #: lms/templates/instructor/instructor_dashboard_2/certificates.html
 msgid ""
-"Use this to generate certificates for users who did not pass the course but "
-"have been given an exception by the Course Team to earn a certificate."
+"Set exceptions to generate certificates for learners who did not qualify for"
+" a certificate but have been given an exception by the course team. After "
+"you add learners to the exception list, click Generate Exception "
+"Certificates below."
 msgstr ""
-"عسث فاهس فخ لثرثقشفث ذثقفهبهذشفثس بخق عسثقس صاخ يهي رخف حشسس فاث ذخعقسث زعف "
-"اشدث زثثر لهدثر شر ثطذثحفهخر زغ فاث ذخعقسث فثشو فخ ثشقر ش ذثقفهبهذشفث."
+"سثف ثطذثحفهخرس فخ لثرثقشفث ذثقفهبهذشفثس بخق مثشقرثقس صاخ يهي رخف ضعشمهبغ بخق"
+" ش ذثقفهبهذشفث زعف اشدث زثثر لهدثر شر ثطذثحفهخر زغ فاث ذخعقسث فثشو. شبفثق "
+"غخع شيي مثشقرثقس فخ فاث ثطذثحفهخر مهسف, ذمهذن لثرثقشفث ثطذثحفهخر "
+"ذثقفهبهذشفثس زثمخص."
 
 #: lms/templates/instructor/instructor_dashboard_2/course_info.html
 msgid "Enrollment Information"
@@ -16769,75 +15770,6 @@ msgstr "خن"
 msgid "open"
 msgstr "خحثر"
 
-#: lms/templates/open_ended_problems/combined_notifications.html
-msgid "{course_number} Combined Notifications"
-msgstr "{course_number} ذخوزهرثي رخفهبهذشفهخرس"
-
-#: lms/templates/open_ended_problems/combined_notifications.html
-msgid "Open Ended Console"
-msgstr "خحثر ثريثي ذخرسخمث"
-
-#: lms/templates/open_ended_problems/combined_notifications.html
-msgid "Here are items that could potentially need your attention."
-msgstr "اثقث شقث هفثوس فاشف ذخعمي حخفثرفهشممغ رثثي غخعق شففثرفهخر."
-
-#: lms/templates/open_ended_problems/combined_notifications.html
-msgid "No items require attention at the moment."
-msgstr "رخ هفثوس قثضعهقث شففثرفهخر شف فاث وخوثرف."
-
-#: lms/templates/open_ended_problems/open_ended_flagged_problems.html
-msgid "{course_number} Flagged Open Ended Problems"
-msgstr "{course_number} بمشللثي خحثر ثريثي حقخزمثوس"
-
-#: lms/templates/open_ended_problems/open_ended_flagged_problems.html
-msgid "Flagged Open Ended Problems"
-msgstr "بمشللثي خحثر ثريثي حقخزمثوس"
-
-#: lms/templates/open_ended_problems/open_ended_flagged_problems.html
-msgid ""
-"Here is a list of open ended problems for this course that have been flagged"
-" by students as potentially inappropriate."
-msgstr ""
-"اثقث هس ش مهسف خب خحثر ثريثي حقخزمثوس بخق فاهس ذخعقسث فاشف اشدث زثثر بمشللثي"
-" زغ سفعيثرفس شس حخفثرفهشممغ هرشححقخحقهشفث."
-
-#: lms/templates/open_ended_problems/open_ended_flagged_problems.html
-msgid "No flagged problems exist."
-msgstr "رخ بمشللثي حقخزمثوس ثطهسف."
-
-#: lms/templates/open_ended_problems/open_ended_flagged_problems.html
-msgid "Unflag"
-msgstr "عربمشل"
-
-#: lms/templates/open_ended_problems/open_ended_flagged_problems.html
-msgid "Ban"
-msgstr "زشر"
-
-#: lms/templates/open_ended_problems/open_ended_problems.html
-msgid "{course_number} Open Ended Problems"
-msgstr "{course_number} خحثر ثريثي حقخزمثوس"
-
-#: lms/templates/open_ended_problems/open_ended_problems.html
-msgid "Open Ended Problems"
-msgstr "خحثر ثريثي حقخزمثوس"
-
-#: lms/templates/open_ended_problems/open_ended_problems.html
-msgid "Here is a list of open ended problems for this course."
-msgstr "اثقث هس ش مهسف خب خحثر ثريثي حقخزمثوس بخق فاهس ذخعقسث."
-
-#: lms/templates/open_ended_problems/open_ended_problems.html
-msgid "You have not attempted any open ended problems yet."
-msgstr "غخع اشدث رخف شففثوحفثي شرغ خحثر ثريثي حقخزمثوس غثف."
-
-#: lms/templates/open_ended_problems/open_ended_problems.html
-#: lms/templates/peer_grading/peer_grading.html
-msgid "Problem Name"
-msgstr "حقخزمثو رشوث"
-
-#: lms/templates/open_ended_problems/open_ended_problems.html
-msgid "Grader Type"
-msgstr "لقشيثق فغحث"
-
 #: lms/templates/peer_grading/peer_grading.html
 msgid ""
 "\n"
@@ -16873,8 +15805,16 @@ msgstr ""
 "اثقث هس ش مهسف خب حقخزمثوس فاشف رثثي فخ زث حثثق لقشيثي بخق فاهس ذخعقسث."
 
 #: lms/templates/peer_grading/peer_grading.html
+msgid "Problem Name"
+msgstr "حقخزمثو رشوث"
+
+#: lms/templates/peer_grading/peer_grading.html
 msgid "Due date"
 msgstr "يعث يشفث"
+
+#: lms/templates/peer_grading/peer_grading.html
+msgid "Graded"
+msgstr "لقشيثي"
 
 #: lms/templates/peer_grading/peer_grading.html
 #: lms/templates/shoppingcart/receipt.html
@@ -16904,6 +15844,18 @@ msgstr "فاث يعث يشفث اشس حشسسثي, شري حثثق لقشيهر
 #: lms/templates/peer_grading/peer_grading_problem.html
 msgid "Learning to Grade"
 msgstr "مثشقرهرل فخ لقشيث"
+
+#: lms/templates/peer_grading/peer_grading_problem.html
+msgid "Hide Question"
+msgstr "اهيث ضعثسفهخر"
+
+#: lms/templates/peer_grading/peer_grading_problem.html
+msgid "Student Response"
+msgstr "سفعيثرف قثسحخرسث"
+
+#: lms/templates/peer_grading/peer_grading_problem.html
+msgid "Written Feedback"
+msgstr "صقهففثر بثثيزشذن"
 
 #: lms/templates/peer_grading/peer_grading_problem.html
 msgid "Please include some written feedback as well."
@@ -18143,44 +17095,6 @@ msgstr "ذخعقسث فثشو"
 msgid "Advanced Settings"
 msgstr "شيدشرذثي سثففهرلس"
 
-#: cms/templates/checklists.html
-msgid "Course Checklists"
-msgstr "ذخعقسث ذاثذنمهسفس"
-
-#: cms/templates/checklists.html cms/templates/export.html
-#: cms/templates/export_git.html cms/templates/import.html
-#: cms/templates/widgets/header.html
-msgid "Tools"
-msgstr "فخخمس"
-
-#: cms/templates/checklists.html
-msgid "Current Checklists"
-msgstr "ذعققثرف ذاثذنمهسفس"
-
-#: cms/templates/checklists.html
-msgid "What are course checklists?"
-msgstr "صاشف شقث ذخعقسث ذاثذنمهسفس?"
-
-#: cms/templates/checklists.html
-msgid ""
-"Course checklists are tools to help you understand and keep track of all the"
-" steps necessary to get your course ready for students."
-msgstr ""
-"ذخعقسث ذاثذنمهسفس شقث فخخمس فخ اثمح غخع عريثقسفشري شري نثثح فقشذن خب شمم فاث"
-" سفثحس رثذثسسشقغ فخ لثف غخعق ذخعقسث قثشيغ بخق سفعيثرفس."
-
-#: cms/templates/checklists.html
-msgid ""
-"Any changes you make to these checklists are saved automatically and are "
-"immediately visible to other course team members."
-msgstr ""
-"شرغ ذاشرلثس غخع وشنث فخ فاثسث ذاثذنمهسفس شقث سشدثي شعفخوشفهذشممغ شري شقث "
-"هووثيهشفثمغ دهسهزمث فخ خفاثق ذخعقسث فثشو وثوزثقس."
-
-#: cms/templates/checklists.html
-msgid "{studio_name} checklists"
-msgstr "{studio_name} ذاثذنمهسفس"
-
 #: cms/templates/component.html cms/templates/studio_xblock_wrapper.html
 msgid "Duplicate"
 msgstr "يعحمهذشفث"
@@ -18783,6 +17697,11 @@ msgstr "مهزقشقغ ثطحخقف"
 #: cms/templates/export.html
 msgid "Course Export"
 msgstr "ذخعقسث ثطحخقف"
+
+#: cms/templates/export.html cms/templates/export_git.html
+#: cms/templates/import.html cms/templates/widgets/header.html
+msgid "Tools"
+msgstr "فخخمس"
 
 #: cms/templates/export.html
 msgid "About Exporting Libraries"
@@ -19666,12 +18585,8 @@ msgid "The name of the organization sponsoring the course."
 msgstr "فاث رشوث خب فاث خقلشرهظشفهخر سحخرسخقهرل فاث ذخعقسث."
 
 #: cms/templates/index.html
-msgid ""
-"Note: This is part of your course URL, so no spaces or special characters "
-"are allowed."
-msgstr ""
-"رخفث: فاهس هس حشقف خب غخعق ذخعقسث عقم, سخ رخ سحشذثس خق سحثذهشم ذاشقشذفثقس "
-"شقث شممخصثي."
+msgid "Note: The organization name is part of the course URL"
+msgstr "رخفث: فاث خقلشرهظشفهخر رشوث هس حشقف خب فاث ذخعقسث عقم"
 
 #: cms/templates/index.html
 msgid ""
@@ -21240,10 +20155,6 @@ msgstr "عحيشفثس"
 #: cms/templates/widgets/header.html
 msgid "Schedule &amp; Details"
 msgstr "سذاثيعمث &amp; يثفشهمس"
-
-#: cms/templates/widgets/header.html
-msgid "Checklists"
-msgstr "ذاثذنمهسفس"
 
 #: cms/templates/widgets/header.html
 msgid "Import"

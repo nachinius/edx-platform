@@ -648,6 +648,11 @@ def course_info(request, course_id):
 
     Assumes the course_id is in a valid format.
     """
+
+# ZANA disable the rest of the pages...
+#
+    return redirect('courseware/')
+
     course_key = SlashSeparatedCourseKey.from_deprecated_string(course_id)
     with modulestore().bulk_operations(course_key):
         course = get_course_by_id(course_key, depth=2)
